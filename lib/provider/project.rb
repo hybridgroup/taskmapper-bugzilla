@@ -2,7 +2,7 @@ module TicketMaster::Provider
   module Bugzilla
     # Project class for ticketmaster-bugzilla
     # 
-    # 
+    API = BugzillaAPI::Project 
     class Project < TicketMaster::Provider::Base::Project
       # declare needed overloaded methods here
       

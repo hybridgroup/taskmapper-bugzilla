@@ -5,9 +5,6 @@ require 'ticketmaster'
 require 'ticketmaster-bugzilla'
 require 'spec'
 require 'spec/autorun'
-require 'factory_girl'
-
-Dir["#{File.dirname(__FILE__)}/factories/*.rb"].each {|f| require f} 
 
 Spec::Runner.configure do |config|
   

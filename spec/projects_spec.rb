@@ -3,18 +3,14 @@ require File.expand_path(File.dirname(__FILE__) + '/spec_helper')
 describe "Ticketmaster::Provider::Bugzilla::Project" do
 
   before(:all) do 
-    @project_name = 'Core'
     @klass = TicketMaster::Provider::Bugzilla::Project
   end
 
   before(:each) do
-    @product = Factory.build(:product)
-    @projects = [@product]
     @ticketmaster = TicketMaster.new(:bugzilla, {:username => 'george.rafael@gmail.com', :password => '123456', :url => 'https://bugzilla.mozilla.org'})
   end
 
   it "should be able to load all projects" do
-    Rubyzilla::Product.stub!(:list).and_return(@projects)
     @ticketmaster.projects.should be_an_instance_of(Array)
     @ticketmaster.projects.first.should be_an_instance_of(@klass)
   end

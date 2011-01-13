@@ -39,17 +39,22 @@ module TicketMaster::Provider
 
       def self.find_by_attributes(*options)
         hash = options.first
-        PRODUCT_API.list.select do |product|
+        self.find_all.select do |project|
           hash.inject(true) do |memo, kv|
+            break unless memo
             key, value = kv
             begin
-              memo &= product.send(key) == value
-            rescue
+              memo &= project.send(key) == value
+            rescue NoMethodError
               memo = false
             end
-            self.new memo
+            memo
           end
         end
+      end
+
+      def self.find_all(*options)
+        PRODUCT_API.list.select { |product| self.new product }
       end
 
     end

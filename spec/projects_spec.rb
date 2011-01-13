@@ -40,4 +40,11 @@ describe "Ticketmaster::Provider::Bugzilla::Project" do
     project.name.should == 'Core'
   end
 
+  it "should be able to find by an array of id's" do 
+    project = @ticketmaster.project.find(:all, [1,2])
+    project.should be_an_instance_of(Array)
+    project.first.should be_an_instance_of(@klass)
+    project.first.name.should == 'Calendar'
+  end
+
 end

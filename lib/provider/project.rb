@@ -14,7 +14,9 @@ module TicketMaster::Provider
             @system_data = {:client => object}
             hash = {:id => object.id,
                     :name => object.name,
-                    :description => object.name}
+                    :description => object.name, 
+                    :created_at => nil, 
+                    :updated_at => nil}
           else
             hash = object
           end

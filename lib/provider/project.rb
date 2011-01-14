@@ -65,6 +65,10 @@ module TicketMaster::Provider
         PRODUCT_API.list.collect { |product| self.new product }
       end
 
+      def tickets(*options)
+        TicketMaster::Provider::Bugzilla::Ticket.find(self.id, options)
+      end
+
     end
   end
 end

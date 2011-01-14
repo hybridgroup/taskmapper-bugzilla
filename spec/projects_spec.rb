@@ -11,6 +11,7 @@ describe "Ticketmaster::Provider::Bugzilla::Project" do
 
   before(:each) do
     @ticketmaster = TicketMaster.new(:bugzilla, {:username => 'george.rafael@gmail.com', :password => '123456', :url => 'https://bugzilla.mozilla.org'})
+    Rubyzilla::Product.stub!(:list).and_return(@projects)
   end
 
   it "should be able to load all projects" do

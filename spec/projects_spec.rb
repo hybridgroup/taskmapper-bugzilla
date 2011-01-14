@@ -3,7 +3,10 @@ require File.expand_path(File.dirname(__FILE__) + '/spec_helper')
 describe "Ticketmaster::Provider::Bugzilla::Project" do
 
   before(:all) do 
+    @core = {:id => 1, :name => 'Core'}
+    @projects = [@core]
     @klass = TicketMaster::Provider::Bugzilla::Project
+    Rubyzilla::Product.stub!(:list).and_return(@projects)
   end
 
   before(:each) do
@@ -44,7 +47,7 @@ describe "Ticketmaster::Provider::Bugzilla::Project" do
     project = @ticketmaster.project.find(:all, [1,2])
     project.should be_an_instance_of(Array)
     project.first.should be_an_instance_of(@klass)
-    project.first.name.should == 'Calendar'
+    project.first.name.should == 'Core'
   end
 
 end

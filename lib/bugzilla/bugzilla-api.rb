@@ -1,24 +1,8 @@
-require 'rubygems'
-require 'bugzilla'
-
-module BugzillaAPI
-  class << self
-    attr_accessor :username, :password, :url
-
-    def authenticate(username, password, url)
-      @url = URI.parse(url)
-      @host = @url.host
-      @port = @url.port
-      @path = @url.path
-      @rbugzilla = ::Bugzilla::XMLRPC.new(@host, @port, @path)
-    end
-
-  end
-
-
-  class Project
-    def self.find(*options)
-      []
+module Rubyzilla
+  class Product
+    def bugs
+      result = Bugzilla.server.call("Bugs.search", {:product => self.name, :last_change_time => Time.now-30*24*60*60})
+      result["bugs"]
     end
   end
 end

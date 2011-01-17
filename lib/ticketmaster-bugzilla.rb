@@ -3,7 +3,6 @@ require 'rubyzilla'
 module Rubyzilla
   class Product
     def bugs(attributes = {})
-      puts attributes.inspect
       if attributes.empty?
         attributes.merge!(:last_change_time => Time.now-30*24*60*60)
       end

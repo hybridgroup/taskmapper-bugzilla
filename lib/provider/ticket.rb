@@ -36,11 +36,14 @@ module TicketMaster::Provider
 
       def self.find(project_id, *options)
         if options.first.empty?
-          TICKETS_API.new(project_id).bugs.collect { |bug| self.new bug }
+          TICKETS_API.new(project_id).bugs.collect { |bug| self.new bug }         
         elsif options[0].first.is_a? Array
           options[0].first.collect { |id| self.find_by_id(id) }
         elsif options[0].first.is_a? Hash
           TICKETS_API.new(project_id).bugs(options[0].first).collect { |bug| self.new bug }
+        elsif options[0].first.is_a? Fixnum
+          puts options.inspect
+          [self.find_by_id options[0].first]
         end
       end
 

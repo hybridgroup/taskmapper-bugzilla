@@ -43,7 +43,7 @@ module TicketMaster::Provider
           TICKETS_API.new(project_id).bugs(options[0].first).collect { |bug| self.new bug }
         elsif options[0].first.is_a? Fixnum
           puts options.inspect
-          [self.find_by_id options[0].first]
+          self.find_by_id options[0].first
         end
       end
 

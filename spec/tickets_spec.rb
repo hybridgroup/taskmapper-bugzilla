@@ -21,7 +21,7 @@ describe "Ticketmaster::Provider::Bugzilla::Ticket" do
     tickets = @project.tickets([65845])
     tickets.should be_an_instance_of(Array)
     tickets.first.should be_an_instance_of(@klass)
-    tickets.first.id.should == 65845
+    tickets.first.id.should == 915
   end
 
   it "should be able to search tickets based on id attribute"  do

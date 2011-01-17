@@ -38,10 +38,7 @@ module TicketMaster::Provider
         if options.first.empty?
           TICKETS_API.new(project_id).bugs.collect { |bug| self.new bug }
         elsif options.first.is_a? Array
-          options[0].first.collect { |id| self.find_by_id(id) }
           TICKETS_API.new(project_id).bugs.collect { |bug| self.new bug }         
-        elsif options[0].first.is_a? Array
-          options[0].first.collect { |id| self.find_by_id(id) }
         elsif options[0].first.is_a? Hash
           TICKETS_API.new(project_id).bugs(options[0].first).collect { |bug| self.new bug }
         end

@@ -30,12 +30,15 @@ describe "Ticketmaster::Provider::Bugzilla::Ticket" do
     tickets.first.should be_an_instance_of(@klass)
   end
 
-  it "should be able to search tickets by id" do
+  it "should be able to search a ticket by id" do
     ticket = @project.ticket(65845)
     ticket.should be_an_instance_of(@klass)
     ticket.id.should == 65845
   end
 
-  it "should be"
-
+  it "should be able to return a ticket by attributes" do
+    ticket = @project.ticket(:id => 65845)
+    ticket.should be_an_instance_of(@klass)
+    ticket.id.should == 65845
+  end
 end

@@ -73,6 +73,10 @@ module TicketMaster::Provider
         TicketMaster::Provider::Bugzilla::Ticket.find_by_id(options.first)
       end
 
+      def ticket!(*options)
+        TicketMaster::Provider::Bugzilla::Ticket.create(self.id,*options)
+      end
+
     end
   end
 end

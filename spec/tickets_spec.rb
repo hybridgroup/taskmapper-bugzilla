@@ -41,4 +41,9 @@ describe "Ticketmaster::Provider::Bugzilla::Ticket" do
     ticket.should be_an_instance_of(@klass)
     ticket.id.should == 65845
   end
+
+  it "should be able to create a ticket" do 
+    ticket = @project.ticket!(:summary => "The program crashes", :description => "It crashes", :component => "Canvas: 2D", :op_sys => "Linux", :platform => "x86")
+    ticket.should be_an_instance_of(@klass)
+  end
 end

@@ -6,7 +6,6 @@ describe "Ticketmaster::Provider::Bugzilla::Project" do
     @core = {:id => 1, :name => 'Core'}
     @projects = [@core]
     @klass = TicketMaster::Provider::Bugzilla::Project
-    Rubyzilla::Product.stub!(:list).and_return(@projects)
   end
 
   before(:each) do

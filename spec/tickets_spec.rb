@@ -4,6 +4,8 @@ describe "Ticketmaster::Provider::Bugzilla::Ticket" do
 
   before(:all) do 
     @klass = TicketMaster::Provider::Bugzilla::Ticket
+    bug = {:id => 65845}
+    Rubyzilla::Product.stub!(:bugs).and_return([bug])
   end
 
   before(:each) do 

@@ -28,7 +28,7 @@ module TicketMaster::Provider
       end
 
       def self.find(ticket_id, *options)
-        if options[0].first.empty?
+        if options.first.empty?
           COMMENT_API.new(ticket_id).comments.collect { |comment| self.new comment }
         end
       end

@@ -7,9 +7,9 @@ describe "Ticketmaster::Provider::Bugzilla::Comment" do
   end
 
   before(:each) do 
-    @ticketmaster = TicketMaster.new(:bugzilla, {:username => 'george.rafael@gmail.com', :password => '123456', :url => 'https://bugzilla.mozilla.org'})
+    @ticketmaster = TicketMaster.new(:bugzilla, {:username => 'rafael@hybridgroup.com', :password => '123456', :url => 'https://bugzilla.mozilla.org'})
     @project = @ticketmaster.project(1)
-    @ticket = @project.tickets.first
+    @ticket = @project.ticket(65845)
   end
 
   it "should be able to load all comments from a ticket" do

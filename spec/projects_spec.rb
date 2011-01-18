@@ -9,7 +9,7 @@ describe "Ticketmaster::Provider::Bugzilla::Project" do
   end
 
   before(:each) do
-    @ticketmaster = TicketMaster.new(:bugzilla, {:username => 'george.rafael@gmail.com', :password => '123456', :url => 'https://bugzilla.mozilla.org'})
+    @ticketmaster = TicketMaster.new(:bugzilla, {:username => 'rafael@hybridgroup.com', :password => '123456', :url => 'https://bugzilla.mozilla.org'})
     Rubyzilla::Product.stub!(:list).and_return(@projects)
   end
 

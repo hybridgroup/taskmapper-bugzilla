@@ -14,8 +14,8 @@ module Rubyzilla
 
   class Bug
     def comments
-      result = Bugzilla.server.call("Bug.comments", {:ids => [self.id], :new_since => Time.now-30*24*60*60})
-      result["comments"]
+      result = Bugzilla.server.call("Bug.comments", {:ids => [self.id]})
+      result["bugs"]["#{self.id}"]["comments"]
     end
   end
 end

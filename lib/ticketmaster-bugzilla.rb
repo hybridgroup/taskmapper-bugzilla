@@ -11,6 +11,13 @@ module Rubyzilla
       result["bugs"]
     end
   end
+
+  class Bug
+    def comments
+      result = Bugzilla.server.call("Bug.comments", {:ids => [self.id], :new_since => Time.now-30*24*60*60})
+      result["comments"]
+    end
+  end
 end
 
 %w{ bugzilla ticket project comment }.each do |f|

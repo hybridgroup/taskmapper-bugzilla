@@ -45,16 +45,20 @@ module TicketMaster::Provider
       end
 
       def self.create(project_id, *options)
-        #begin
+        begin
           bug = Rubyzilla::Bug.new   
           bug.product = TICKETS_API.new project_id
           options.first.each_pair do |k, v|
             bug.send "#{k}=", v
           end
           self.new bug.create
-        #rescue
-        #  self.find(project_id, []).last
-        #end
+        rescue
+          self.find(project_id, []).last
+        end
+      end
+
+      def comments(*options)
+        Comment.find(self.id, options)
       end
 
     end

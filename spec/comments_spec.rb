@@ -17,4 +17,10 @@ describe "Ticketmaster::Provider::Bugzilla::Comment" do
     comments.should be_an_instance_of(Array)
     comments.first.should be_an_instance_of(@klass)
   end
+
+  it "should be able to load all comments based on array of id's" do 
+    comments = @ticket.comments([790549])
+    comments.should be_an_instance_of(Array)
+    comments.first.should be_an_instance_of(@klass)
+  end
 end

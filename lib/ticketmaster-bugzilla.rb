@@ -13,9 +13,19 @@ module Rubyzilla
   end
 
   class Bug
-    def comments
-      result = Bugzilla.server.call("Bug.comments", {:ids => [self.id]})
-      result["bugs"]["#{self.id}"]["comments"]
+    def comments(attributes = {})
+      unless attributes[:comments_id].empty?
+        attributes.merge!(:ids => [self.id])
+      end
+      comments = []
+      puts attributes.inspect
+      result = Bugzilla.server.call("Bug.comments", attributes)
+      if attributes.has_key? "ids"
+        comments = result["bugs"]["#{self.id}"]["comments"]
+      else
+        comments = attributes[:comments_id].select { |comment_id| result["comments"]["#{comment_id}"] }
+      end
+      comments
     end
   end
 end

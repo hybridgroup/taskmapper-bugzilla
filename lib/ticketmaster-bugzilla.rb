@@ -14,16 +14,15 @@ module Rubyzilla
 
   class Bug
     def comments(attributes = {})
-      unless attributes[:comments_id].empty?
-        attributes.merge!(:ids => [self.id])
+      if !attributes.has_key? :comment_ids
+        attributes.merge!({:ids => [self.id]})
       end
       comments = []
-      puts attributes.inspect
       result = Bugzilla.server.call("Bug.comments", attributes)
-      if attributes.has_key? "ids"
+      if attributes.has_key? :ids
         comments = result["bugs"]["#{self.id}"]["comments"]
       else
-        comments = attributes[:comments_id].select { |comment_id| result["comments"]["#{comment_id}"] }
+        attributes[:comment_ids].each { |comment_id| comments << result["comments"]["#{comment_id}"] }
       end
       comments
     end

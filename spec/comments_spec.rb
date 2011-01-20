@@ -23,4 +23,10 @@ describe "Ticketmaster::Provider::Bugzilla::Comment" do
     comments.should be_an_instance_of(Array)
     comments.first.should be_an_instance_of(@klass)
   end
+
+  it "should be able to load a comment based on an id" do 
+    comment = @ticket.comment(790549)
+    comment.should be_an_instance_of(@klass)
+    comment.id.should == 790549
+  end
 end

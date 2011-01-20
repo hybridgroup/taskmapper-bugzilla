@@ -14,6 +14,7 @@ module TicketMaster::Provider
                   :id => object.id,
                   :component_id => object.component_id,
                   :summary => object.summary,
+                  :title => object.summary,
                   :version => object.version,
                   :op_sys => object.op_sys,
                   :platform => object.platform,
@@ -21,9 +22,12 @@ module TicketMaster::Provider
                   :description => object.description,
                   :alias => object.alias,
                   :qa_contact => object.qa_contact,
+                  :assignee => object.qa_contact,
                   :status => object.status,
                   :target_milestone => object.target_milestone,
-                  :severity => object.severity}
+                  :severity => object.severity,
+                  :created_at => nil,
+                  :updated_at => nil}
         else
           hash = object
         end
@@ -59,6 +63,10 @@ module TicketMaster::Provider
 
       def comments(*options)
         Comment.find(self.id, options)
+      end
+
+      def comment(*options)
+         Comment.find_by_id(self.id, options.first)
       end
 
     end

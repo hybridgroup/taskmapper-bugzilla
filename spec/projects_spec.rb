@@ -9,7 +9,7 @@ describe "Ticketmaster::Provider::Bugzilla::Project" do
   end
 
   before(:each) do
-    @ticketmaster = TicketMaster.new(:bugzilla, {:username => 'rafael@hybridgroup.com', :password => '123456', :url => 'https://bugzilla.mozilla.org'})
+    @ticketmaster = TicketMaster.new(:bugzilla, {:username => 'george.rafael@gmail.com', :password => '123456', :url => 'https://landfill.bugzilla.org/bugzilla-3.6-branch'})
     Rubyzilla::Product.stub!(:list).and_return(@projects)
   end
 
@@ -22,19 +22,19 @@ describe "Ticketmaster::Provider::Bugzilla::Project" do
     projects = @ticketmaster.projects([1,2,3])
     projects.should be_an_instance_of(Array)
     projects.first.should be_an_instance_of(@klass)
-    projects.first.name.should == 'Core'
+    projects.first.name.should == 'WorldControl'
   end
 
   it "should be able to find a project by id" do
     project = @ticketmaster.project(1)
     project.should be_an_instance_of(@klass)
-    project.name.should == 'Core'
+    project.name.should == 'WorldControl'
   end
 
   it "should be able to load project using the find method" do
     project = @ticketmaster.project.find(1)
     project.should be_an_instance_of(@klass)
-    project.name.should == 'Core'
+    project.name.should == 'WorldControl'
   end
 
   it "should be able to find by attributes" do 

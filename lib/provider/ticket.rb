@@ -26,12 +26,28 @@ module TicketMaster::Provider
                   :status => object.status,
                   :target_milestone => object.target_milestone,
                   :severity => object.severity,
-                  :created_at => nil,
-                  :updated_at => nil}
+                  :created_at => object.created_at,
+                  :updated_at => object.updated_at}
         else
           hash = object
         end
         super hash
+      end
+
+      def created_at
+        begin
+          normalize_datetime(self[:last_change_time])
+        rescue
+          self[:created_at]
+        end
+      end
+
+      def updated_at
+        begin
+          normalize_datetime(self[:last_change_time])      
+        rescue
+          self[:updated_at]
+        end
       end
 
       def self.find_by_id(id)
@@ -67,6 +83,11 @@ module TicketMaster::Provider
 
       def comment(*options)
          Comment.find_by_id(self.id, options.first)
+      end
+
+      private
+      def normalize_datetime(datetime)
+        Time.mktime(datetime.year, datetime.month, datetime.day, datetime.hour, datetime.min, datetime.sec)
       end
 
     end

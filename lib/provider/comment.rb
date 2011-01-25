@@ -17,8 +17,8 @@ module TicketMaster::Provider
                     :ticket_id => object.bug_id,
                     :body => object.text,
                     :author => object.creator,
-                    :created_at => object.time,
-                    :updated_at => object.time}
+                    :created_at => object.created_at,
+                    :updated_at => object.updated_at}
 
           else
             hash = object
@@ -29,7 +29,7 @@ module TicketMaster::Provider
 
       def created_at
         begin
-          normalize_datetime(self[:created_at])
+          normalize_datetime(self[:time])
         rescue
           self[:created_at]
         end
@@ -37,7 +37,7 @@ module TicketMaster::Provider
 
       def updated_at
         begin
-          normalize_datetime(self[:updated_at])
+          normalize_datetime(self[:time])
         rescue
           self[:updated_at]
         end

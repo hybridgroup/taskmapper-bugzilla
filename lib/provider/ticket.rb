@@ -26,8 +26,8 @@ module TicketMaster::Provider
                   :status => object.status,
                   :target_milestone => object.target_milestone,
                   :severity => object.severity,
-                  :created_at => object.created_at,
-                  :updated_at => object.updated_at}
+                  :created_at => nil,
+                  :updated_at => nil}
         else
           hash = object
         end

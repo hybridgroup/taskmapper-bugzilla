@@ -17,8 +17,8 @@ module TicketMaster::Provider
                     :ticket_id => object.bug_id,
                     :body => object.text,
                     :author => object.creator,
-                    :created_at => object.created_at,
-                    :updated_at => object.updated_at}
+                    :created_at => object.time,
+                    :updated_at => object.time}
 
           else
             hash = object

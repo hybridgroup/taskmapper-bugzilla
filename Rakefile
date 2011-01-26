@@ -4,11 +4,11 @@ require 'rake'
 begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
-    gem.name = "ticketmaster-yourprovder"
+    gem.name = "ticketmaster-bugzilla"
     gem.summary = %Q{Ticketmaster Provider for Bugzilla}
     gem.description = %Q{Allows ticketmaster to interact with Bugzilla.}
-    gem.email = "george.rafael@gmail.com"
-    gem.homepage = "http://bandw.tumblr.com"
+    gem.email = "rafael@hybridgroup.com"
+    gem.homepage = "http://github.com/hybridgroup/ticketmaster-bugzilla"
     gem.authors = ["Rafael George"]
     gem.add_development_dependency "rspec", ">= 1.2.9"
     gem.add_dependency "ticketmaster", ">= 0.1.0"

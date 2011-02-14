@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Rafael George"]
-  s.date = %q{2011-01-25}
+  s.date = %q{2011-02-14}
   s.description = %q{Allows ticketmaster to interact with Bugzilla.}
   s.email = %q{rafael@hybridgroup.com}
   s.extra_rdoc_files = [
@@ -32,7 +32,7 @@ Gem::Specification.new do |s|
     "spec/spec_helper.rb",
     "spec/ticketmaster-bugzilla_spec.rb",
     "spec/tickets_spec.rb",
-    "ticketmaster-yourprovder.gemspec"
+    "ticketmaster-bugzilla.gemspec"
   ]
   s.homepage = %q{http://github.com/hybridgroup/ticketmaster-bugzilla}
   s.require_paths = ["lib"]
@@ -52,14 +52,14 @@ Gem::Specification.new do |s|
 
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
       s.add_development_dependency(%q<rspec>, [">= 1.2.9"])
-      s.add_runtime_dependency(%q<ticketmaster>, [">= 0.1.0"])
+      s.add_runtime_dependency(%q<ticketmaster>, [">= 0.5.2"])
       s.add_runtime_dependency(%q<activesupport>, [">= 2.3.2"])
       s.add_runtime_dependency(%q<activeresource>, [">= 2.3.2"])
       s.add_runtime_dependency(%q<addressable>, [">= 2.1.2"])
       s.add_runtime_dependency(%q<guitsaru-rubyzilla>, [">= 0"])
     else
       s.add_dependency(%q<rspec>, [">= 1.2.9"])
-      s.add_dependency(%q<ticketmaster>, [">= 0.1.0"])
+      s.add_dependency(%q<ticketmaster>, [">= 0.5.2"])
       s.add_dependency(%q<activesupport>, [">= 2.3.2"])
       s.add_dependency(%q<activeresource>, [">= 2.3.2"])
       s.add_dependency(%q<addressable>, [">= 2.1.2"])
@@ -67,7 +67,7 @@ Gem::Specification.new do |s|
     end
   else
     s.add_dependency(%q<rspec>, [">= 1.2.9"])
-    s.add_dependency(%q<ticketmaster>, [">= 0.1.0"])
+    s.add_dependency(%q<ticketmaster>, [">= 0.5.2"])
     s.add_dependency(%q<activesupport>, [">= 2.3.2"])
     s.add_dependency(%q<activeresource>, [">= 2.3.2"])
     s.add_dependency(%q<addressable>, [">= 2.1.2"])

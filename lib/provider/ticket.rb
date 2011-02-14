@@ -12,6 +12,7 @@ module TicketMaster::Provider
         unless object.is_a? Hash
           hash = {:product_id => object.product_id,
                   :id => object.id,
+                  :project_id => object.product_id,
                   :component_id => object.component_id,
                   :summary => object.summary,
                   :title => object.summary,
@@ -23,6 +24,7 @@ module TicketMaster::Provider
                   :alias => object.alias,
                   :qa_contact => object.qa_contact,
                   :assignee => object.qa_contact,
+                  :requestor => object.qa_contact,
                   :status => object.status,
                   :target_milestone => object.target_milestone,
                   :severity => object.severity,

@@ -31,7 +31,8 @@ Gem::Specification.new do |s|
     "spec/spec.opts",
     "spec/spec_helper.rb",
     "spec/ticketmaster-bugzilla_spec.rb",
-    "spec/tickets_spec.rb"
+    "spec/tickets_spec.rb",
+    "ticketmaster-bugzilla.gemspec"
   ]
   s.homepage = %q{http://github.com/hybridgroup/ticketmaster-bugzilla}
   s.require_paths = ["lib"]

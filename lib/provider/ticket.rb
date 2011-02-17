@@ -7,33 +7,39 @@ module TicketMaster::Provider
       # declare needed overloaded methods here
       TICKETS_API = Rubyzilla::Product
       def initialize(*object)
-        object = object.first
-        @system_data = {:client => object}
-        unless object.is_a? Hash
-          hash = {:product_id => object.product_id,
-                  :id => object.id,
-                  :project_id => object.product_id,
-                  :component_id => object.component_id,
-                  :summary => object.summary,
-                  :title => object.summary,
-                  :version => object.version,
-                  :op_sys => object.op_sys,
-                  :platform => object.platform,
-                  :priority => object.priority,
-                  :description => object.description,
-                  :alias => object.alias,
-                  :qa_contact => object.qa_contact,
-                  :assignee => object.qa_contact,
-                  :requestor => object.qa_contact,
-                  :status => object.status,
-                  :target_milestone => object.target_milestone,
-                  :severity => object.severity,
-                  :created_at => nil,
-                  :updated_at => nil}
-        else
-          hash = object
+        if object.first
+          object = object.first
+          unless object.is_a? Hash
+            @system_data = {:client => object}
+            hash = {:product_id => object.product_id,
+              :id => object.id,
+              :project_id => object.product_id,
+              :component_id => object.component_id,
+              :summary => object.summary,
+              :title => object.summary,
+              :version => object.version,
+              :op_sys => object.op_sys,
+              :platform => object.platform,
+              :priority => object.priority,
+              :description => object.description,
+              :alias => object.alias,
+              :qa_contact => object.qa_contact,
+              :assignee => object.qa_contact,
+              :requestor => object.qa_contact,
+              :status => object.status,
+              :target_milestone => object.target_milestone,
+              :severity => object.severity,
+              :created_at => nil,
+              :updated_at => nil}
+          else
+            hash = object
+          end
+          super hash
         end
-        super hash
+      end
+
+      def title
+        self[:summary]
       end
 
       def created_at
@@ -84,7 +90,7 @@ module TicketMaster::Provider
       end
 
       def comment(*options)
-         Comment.find_by_id(self.id, options.first)
+        Comment.find_by_id(self.id, options.first)
       end
 
       private

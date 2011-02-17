@@ -42,6 +42,10 @@ module TicketMaster::Provider
         self[:summary]
       end
 
+      def description
+        self[:description]
+      end
+
       def created_at
         begin
           normalize_datetime(self[:last_change_time])

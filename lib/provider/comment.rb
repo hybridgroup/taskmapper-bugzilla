@@ -27,6 +27,10 @@ module TicketMaster::Provider
         end
       end
 
+      def body
+        self[:text]
+      end
+
       def created_at
         begin
           normalize_datetime(self[:time])

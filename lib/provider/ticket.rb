@@ -24,7 +24,7 @@ module TicketMaster::Provider
               :description => object.description,
               :alias => object.alias,
               :qa_contact => object.qa_contact,
-              :assignee => object.qa_contact,
+              :assignee => object.assigned_to,
               :requestor => object.qa_contact,
               :status => object.status,
               :target_milestone => object.target_milestone,
@@ -44,6 +44,14 @@ module TicketMaster::Provider
 
       def description
         self[:description]
+      end
+
+      def requestor
+        self[:requestor]
+      end
+
+      def assignee
+        self[:assignee]
       end
 
       def created_at

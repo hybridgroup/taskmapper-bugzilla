@@ -8,7 +8,7 @@ module Rubyzilla
       end
       attributes.merge!(:product => self.name, :limit => 100)
       result = Bugzilla.server.call("Bug.search", attributes)
-      result["bugs"]
+      result["bugs"].collect { |bug| Bug.new bug["id"] }
     end
   end
 

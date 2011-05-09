@@ -42,18 +42,7 @@ module TicketMaster::Provider
       def self.find_by_attributes(*options)
         options = options.first
         if options.is_a? Hash
-          self.find_all.select do |project|
-            options.inject(true) do |memo, kv|
-              break unless memo
-              key, value = kv
-              begin
-                memo &= project.send(key) == value
-              rescue NoMethodError
-                memo = false
-              end
-              memo
-            end
-          end
+          search_by_attribute(self.find_all, options)
         else 
           self.find_all.select do |project|
             options.any? { |id| project.id == id }

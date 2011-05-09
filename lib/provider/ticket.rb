@@ -9,7 +9,6 @@ module TicketMaster::Provider
       def initialize(*object)
         if object.first
           object = object.first
-          puts object.inspect
           unless object.is_a? Hash
             @system_data = {:client => object}
             hash = {:product_id => object.product_id,

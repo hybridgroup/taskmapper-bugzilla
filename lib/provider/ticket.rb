@@ -9,7 +9,6 @@ module TicketMaster::Provider
       def initialize(*object)
         if object.first
           object = object.first
-          puts object.inspect
           unless object.is_a? Hash
             @system_data = {:client => object}
             hash = {:product_id => object.product_id,
@@ -79,7 +78,7 @@ module TicketMaster::Provider
         if options.first.empty?
           TICKETS_API.new(project_id).bugs.collect { |bug| self.new bug }
         elsif options.first.is_a? Array
-          TICKETS_API.new(project_id).bugs.collect { |bug| self.new bug }         
+          TICKETS_API.new(project_id).bugs.collect { |bug| self.new bug }
         elsif options[0].first.is_a? Hash
           TICKETS_API.new(project_id).bugs(options[0].first).collect { |bug| self.new bug }
         end

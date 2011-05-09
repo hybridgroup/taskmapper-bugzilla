@@ -7,6 +7,7 @@ module TicketMaster::Provider
       # declare needed overloaded methods here
       TICKETS_API = Rubyzilla::Product
       def initialize(*object)
+        return super(object.first) if object.first.is_a? Hash
         if object.first
           object = object.first
           unless object.is_a? Hash

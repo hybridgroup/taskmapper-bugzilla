@@ -7,6 +7,7 @@ module TicketMaster::Provider
       # declare needed overloaded methods here
       TICKETS_API = Rubyzilla::Product
       def initialize(*object)
+        return super(object.first) if object.first.is_a? Hash
         if object.first
           object = object.first
           unless object.is_a? Hash
@@ -78,7 +79,7 @@ module TicketMaster::Provider
         if options.first.empty?
           TICKETS_API.new(project_id).bugs.collect { |bug| self.new bug }
         elsif options.first.is_a? Array
-          TICKETS_API.new(project_id).bugs.collect { |bug| self.new bug }         
+          TICKETS_API.new(project_id).bugs.collect { |bug| self.new bug }
         elsif options[0].first.is_a? Hash
           TICKETS_API.new(project_id).bugs(options[0].first).collect { |bug| self.new bug }
         end

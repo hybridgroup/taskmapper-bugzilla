@@ -23,7 +23,16 @@ module TicketMaster::Provider
         auth.url = url+'/xmlrpc.cgi'
       end
       @bugzilla = Rubyzilla::Bugzilla.new(auth.url)
-      @bugzilla.login(auth.username,auth.password)
+      begin
+        @bugzilla.login(auth.username,auth.password)
+        @valid_auth = true
+      rescue
+        @valid_auth = false
+      end
+    end
+
+    def valid?
+      @valid_auth
     end
 
     def projects(*options)

@@ -25,14 +25,13 @@ module TicketMaster::Provider
       @bugzilla = Rubyzilla::Bugzilla.new(auth.url)
       begin
         @bugzilla.login(auth.username,auth.password)
-        @valid_auth = true
       rescue
-        @valid_auth = false
+        warn 'Authentication was invalid'
       end
     end
 
     def valid?
-      @valid_auth
+      Rubyzilla::Bugzilla.logged_in?
     end
 
     def projects(*options)

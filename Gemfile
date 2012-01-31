@@ -10,6 +10,8 @@ gem "rubyzilla", "~> 0.1.1"
 group :development do
   gem "rspec", "~> 2.8.0"
   gem "bundler", "~> 1.0.0"
+  gem "fakeweb", "~> 1.3.0"
+  gem "vcr", "~> 1.11.3"
   gem "jeweler", "~> 1.6.4"
   gem "simplecov", "~> 0.5.0", :platforms => :ruby_19
   gem "rcov", "~> 1.0.0", :platforms => :ruby_18

@@ -1,0 +1,256 @@
+---
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :post
+    uri: https://landfill.bugzilla.org:443/bugzilla-3.6-branch/xmlrpc.cgi
+    body: 
+    headers:
+      user-agent:
+      - XMLRPC::Client (Ruby 1.9.3)
+      content-type:
+      - text/xml; charset=utf-8
+      content-length:
+      - '113'
+      connection:
+      - keep-alive
+      cookie:
+      - Bugzilla_login=40167; Bugzilla_logincookie=7fhZjcSXrc
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Tue, 31 Jan 2012 22:48:36 GMT
+      server:
+      - Apache/2.2.3 (CentOS)
+      soapserver:
+      - SOAP::Lite/Perl/0.712
+      content-length:
+      - '375'
+      content-type:
+      - text/xml
+    body: <?xml version="1.0" encoding="UTF-8"?><methodResponse><params><param><value><struct><member><name>ids</name><value><array><data><value><int>1</int></value><value><int>4</int></value><value><int>3</int></value><value><int>19</int></value><value><int>2</int></value><value><int>20</int></value></data></array></value></member></struct></value></param></params></methodResponse>
+    http_version: '1.1'
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :post
+    uri: https://landfill.bugzilla.org:443/bugzilla-3.6-branch/xmlrpc.cgi
+    body: 
+    headers:
+      user-agent:
+      - XMLRPC::Client (Ruby 1.9.3)
+      content-type:
+      - text/xml; charset=utf-8
+      content-length:
+      - '258'
+      connection:
+      - keep-alive
+      cookie:
+      - Bugzilla_login=40167; Bugzilla_logincookie=7fhZjcSXrc
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Tue, 31 Jan 2012 22:48:38 GMT
+      server:
+      - Apache/2.2.3 (CentOS)
+      soapserver:
+      - SOAP::Lite/Perl/0.712
+      content-length:
+      - '1644'
+      content-type:
+      - text/xml
+    body: ! '<?xml version="1.0" encoding="UTF-8"?><methodResponse><params><param><value><struct><member><name>products</name><value><array><data><value><struct><member><name>internals</name><value><struct><member><name>defaultmilestone</name><value><string>---</string></value></member><member><name>allows_unconfirmed</name><value><int>0</int></value></member><member><name>votesperuser</name><value><int>1000</int></value></member><member><name>name</name><value><string>WorldControl</string></value></member><member><name>maxvotesperbug</name><value><int>1</int></value></member><member><name>classification_id</name><value><int>2</int></value></member><member><name>description</name><value><string>A
+      small little program for controlling the world. Can be used&#xd;
+
+      for good or for evil. Sub-components can be created using the WorldControl API
+      to extend control into almost any aspect of reality.</string></value></member><member><name>votestoconfirm</name><value><int>0</int></value></member><member><name>isactive</name><value><int>1</int></value></member><member><name>id</name><value><int>1</int></value></member></struct></value></member><member><name>name</name><value><string>WorldControl</string></value></member><member><name>id</name><value><int>1</int></value></member><member><name>description</name><value><string>A
+      small little program for controlling the world. Can be used&#xd;
+
+      for good or for evil. Sub-components can be created using the WorldControl API
+      to extend control into almost any aspect of reality.</string></value></member></struct></value></data></array></value></member></struct></value></param></params></methodResponse>'
+    http_version: '1.1'
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :post
+    uri: https://landfill.bugzilla.org:443/bugzilla-3.6-branch/xmlrpc.cgi
+    body: 
+    headers:
+      user-agent:
+      - XMLRPC::Client (Ruby 1.9.3)
+      content-type:
+      - text/xml; charset=utf-8
+      content-length:
+      - '258'
+      connection:
+      - keep-alive
+      cookie:
+      - Bugzilla_login=40167; Bugzilla_logincookie=7fhZjcSXrc
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Tue, 31 Jan 2012 22:48:40 GMT
+      server:
+      - Apache/2.2.3 (CentOS)
+      soapserver:
+      - SOAP::Lite/Perl/0.712
+      content-length:
+      - '1301'
+      content-type:
+      - text/xml
+    body: <?xml version="1.0" encoding="UTF-8"?><methodResponse><params><param><value><struct><member><name>products</name><value><array><data><value><struct><member><name>internals</name><value><struct><member><name>defaultmilestone</name><value><string>---</string></value></member><member><name>allows_unconfirmed</name><value><int>0</int></value></member><member><name>votesperuser</name><value><int>0</int></value></member><member><name>name</name><value><string>Spider
+      Séçretíøns</string></value></member><member><name>maxvotesperbug</name><value><int>10000</int></value></member><member><name>classification_id</name><value><int>1</int></value></member><member><name>description</name><value><string>Spider
+      secretions</string></value></member><member><name>votestoconfirm</name><value><int>0</int></value></member><member><name>isactive</name><value><int>1</int></value></member><member><name>id</name><value><int>4</int></value></member></struct></value></member><member><name>name</name><value><string>Spider
+      Séçretíøns</string></value></member><member><name>id</name><value><int>4</int></value></member><member><name>description</name><value><string>Spider
+      secretions</string></value></member></struct></value></data></array></value></member></struct></value></param></params></methodResponse>
+    http_version: '1.1'
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :post
+    uri: https://landfill.bugzilla.org:443/bugzilla-3.6-branch/xmlrpc.cgi
+    body: 
+    headers:
+      user-agent:
+      - XMLRPC::Client (Ruby 1.9.3)
+      content-type:
+      - text/xml; charset=utf-8
+      content-length:
+      - '258'
+      connection:
+      - keep-alive
+      cookie:
+      - Bugzilla_login=40167; Bugzilla_logincookie=7fhZjcSXrc
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Tue, 31 Jan 2012 22:48:41 GMT
+      server:
+      - Apache/2.2.3 (CentOS)
+      soapserver:
+      - SOAP::Lite/Perl/0.712
+      content-length:
+      - '1257'
+      content-type:
+      - text/xml
+    body: <?xml version="1.0" encoding="UTF-8"?><methodResponse><params><param><value><struct><member><name>products</name><value><array><data><value><struct><member><name>internals</name><value><struct><member><name>defaultmilestone</name><value><string>---</string></value></member><member><name>allows_unconfirmed</name><value><int>0</int></value></member><member><name>votesperuser</name><value><int>0</int></value></member><member><name>name</name><value><string>MyOwnBadSelf</string></value></member><member><name>maxvotesperbug</name><value><int>10000</int></value></member><member><name>classification_id</name><value><int>2</int></value></member><member><name>description</name><value><string>feh.</string></value></member><member><name>votestoconfirm</name><value><int>0</int></value></member><member><name>isactive</name><value><int>1</int></value></member><member><name>id</name><value><int>3</int></value></member></struct></value></member><member><name>name</name><value><string>MyOwnBadSelf</string></value></member><member><name>id</name><value><int>3</int></value></member><member><name>description</name><value><string>feh.</string></value></member></struct></value></data></array></value></member></struct></value></param></params></methodResponse>
+    http_version: '1.1'
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :post
+    uri: https://landfill.bugzilla.org:443/bugzilla-3.6-branch/xmlrpc.cgi
+    body: 
+    headers:
+      user-agent:
+      - XMLRPC::Client (Ruby 1.9.3)
+      content-type:
+      - text/xml; charset=utf-8
+      content-length:
+      - '259'
+      connection:
+      - keep-alive
+      cookie:
+      - Bugzilla_login=40167; Bugzilla_logincookie=7fhZjcSXrc
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Tue, 31 Jan 2012 22:48:43 GMT
+      server:
+      - Apache/2.2.3 (CentOS)
+      soapserver:
+      - SOAP::Lite/Perl/0.712
+      content-length:
+      - '1289'
+      content-type:
+      - text/xml
+    body: <?xml version="1.0" encoding="UTF-8"?><methodResponse><params><param><value><struct><member><name>products</name><value><array><data><value><struct><member><name>internals</name><value><struct><member><name>defaultmilestone</name><value><string>---</string></value></member><member><name>allows_unconfirmed</name><value><int>0</int></value></member><member><name>votesperuser</name><value><int>0</int></value></member><member><name>name</name><value><string>Sam's
+      Widget</string></value></member><member><name>maxvotesperbug</name><value><int>10000</int></value></member><member><name>classification_id</name><value><int>3</int></value></member><member><name>description</name><value><string>Special
+      SAM widgets</string></value></member><member><name>votestoconfirm</name><value><int>0</int></value></member><member><name>isactive</name><value><int>1</int></value></member><member><name>id</name><value><int>19</int></value></member></struct></value></member><member><name>name</name><value><string>Sam's
+      Widget</string></value></member><member><name>id</name><value><int>19</int></value></member><member><name>description</name><value><string>Special
+      SAM widgets</string></value></member></struct></value></data></array></value></member></struct></value></param></params></methodResponse>
+    http_version: '1.1'
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :post
+    uri: https://landfill.bugzilla.org:443/bugzilla-3.6-branch/xmlrpc.cgi
+    body: 
+    headers:
+      user-agent:
+      - XMLRPC::Client (Ruby 1.9.3)
+      content-type:
+      - text/xml; charset=utf-8
+      content-length:
+      - '258'
+      connection:
+      - keep-alive
+      cookie:
+      - Bugzilla_login=40167; Bugzilla_logincookie=7fhZjcSXrc
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Tue, 31 Jan 2012 22:48:45 GMT
+      server:
+      - Apache/2.2.3 (CentOS)
+      soapserver:
+      - SOAP::Lite/Perl/0.712
+      content-length:
+      - '1451'
+      content-type:
+      - text/xml
+    body: <?xml version="1.0" encoding="UTF-8"?><methodResponse><params><param><value><struct><member><name>products</name><value><array><data><value><struct><member><name>internals</name><value><struct><member><name>defaultmilestone</name><value><string>---</string></value></member><member><name>allows_unconfirmed</name><value><int>1</int></value></member><member><name>votesperuser</name><value><int>5</int></value></member><member><name>name</name><value><string>FoodReplicator</string></value></member><member><name>maxvotesperbug</name><value><int>999</int></value></member><member><name>classification_id</name><value><int>1</int></value></member><member><name>description</name><value><string>Software
+      that controls a piece of hardware that will create any food item through a voice
+      interface.</string></value></member><member><name>votestoconfirm</name><value><int>2</int></value></member><member><name>isactive</name><value><int>1</int></value></member><member><name>id</name><value><int>2</int></value></member></struct></value></member><member><name>name</name><value><string>FoodReplicator</string></value></member><member><name>id</name><value><int>2</int></value></member><member><name>description</name><value><string>Software
+      that controls a piece of hardware that will create any food item through a voice
+      interface.</string></value></member></struct></value></data></array></value></member></struct></value></param></params></methodResponse>
+    http_version: '1.1'
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :post
+    uri: https://landfill.bugzilla.org:443/bugzilla-3.6-branch/xmlrpc.cgi
+    body: 
+    headers:
+      user-agent:
+      - XMLRPC::Client (Ruby 1.9.3)
+      content-type:
+      - text/xml; charset=utf-8
+      content-length:
+      - '259'
+      connection:
+      - keep-alive
+      cookie:
+      - Bugzilla_login=40167; Bugzilla_logincookie=7fhZjcSXrc
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Tue, 31 Jan 2012 22:48:47 GMT
+      server:
+      - Apache/2.2.3 (CentOS)
+      soapserver:
+      - SOAP::Lite/Perl/0.712
+      content-length:
+      - '1307'
+      content-type:
+      - text/xml
+    body: <?xml version="1.0" encoding="UTF-8"?><methodResponse><params><param><value><struct><member><name>products</name><value><array><data><value><struct><member><name>internals</name><value><struct><member><name>defaultmilestone</name><value><string>---</string></value></member><member><name>allows_unconfirmed</name><value><int>0</int></value></member><member><name>votesperuser</name><value><int>0</int></value></member><member><name>name</name><value><string>LJL
+      Test Product</string></value></member><member><name>maxvotesperbug</name><value><int>10000</int></value></member><member><name>classification_id</name><value><int>1</int></value></member><member><name>description</name><value><string>Test
+      product description</string></value></member><member><name>votestoconfirm</name><value><int>0</int></value></member><member><name>isactive</name><value><int>1</int></value></member><member><name>id</name><value><int>20</int></value></member></struct></value></member><member><name>name</name><value><string>LJL
+      Test Product</string></value></member><member><name>id</name><value><int>20</int></value></member><member><name>description</name><value><string>Test
+      product description</string></value></member></struct></value></data></array></value></member></struct></value></param></params></methodResponse>
+    http_version: '1.1'

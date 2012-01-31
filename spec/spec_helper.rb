@@ -4,6 +4,8 @@ require 'rubygems'
 require 'ticketmaster'
 require 'ticketmaster-bugzilla'
 require 'rspec'
+require 'vcr'
+require 'vcr_setup'
 
 RSpec.configure do |config|
   

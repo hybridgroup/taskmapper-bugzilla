@@ -10,28 +10,26 @@
       content-type:
       - text/xml; charset=utf-8
       content-length:
-      - '376'
+      - '323'
       connection:
       - keep-alive
+      cookie:
+      - Bugzilla_login=40167; Bugzilla_logincookie=7ptWpBTrQn
   response: !ruby/struct:VCR::Response
     status: !ruby/struct:VCR::ResponseStatus
       code: 200
       message: OK
     headers:
       date:
-      - Tue, 07 Feb 2012 00:44:39 GMT
+      - Tue, 07 Feb 2012 00:43:35 GMT
       server:
       - Apache/2.2.3 (CentOS)
       soapserver:
       - SOAP::Lite/Perl/0.712
-      set-cookie:
-      - Bugzilla_login=40167; path=/bugzilla-3.6-branch/; expires=Fri, 01-Jan-2038
-        00:00:00 GMT; secure; HttpOnly
-      - Bugzilla_logincookie=cQlhUQc1Z6; path=/bugzilla-3.6-branch/; expires=Fri,
-        01-Jan-2038 00:00:00 GMT; secure; HttpOnly
       content-length:
-      - '198'
+      - '317'
       content-type:
       - text/xml
-    body: <?xml version="1.0" encoding="UTF-8"?><methodResponse><params><param><value><struct><member><name>id</name><value><int>40167</int></value></member></struct></value></param></params></methodResponse>
+    body: <?xml version="1.0" encoding="UTF-8"?><methodResponse><fault><value><struct><member><name>faultString</name><value><string>Bad
+      argument param sent to Bugzilla::Bug::new function.</string></value></member><member><name>faultCode</name><value><int>-32000</int></value></member></struct></value></fault></methodResponse>
     http_version: '1.1'

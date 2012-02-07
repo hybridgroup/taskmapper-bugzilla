@@ -14,14 +14,14 @@
       connection:
       - keep-alive
       cookie:
-      - Bugzilla_login=40167; Bugzilla_logincookie=7fhZjcSXrc
+      - Bugzilla_login=40167; Bugzilla_logincookie=cQlhUQc1Z6
   response: !ruby/struct:VCR::Response
     status: !ruby/struct:VCR::ResponseStatus
       code: 200
       message: OK
     headers:
       date:
-      - Tue, 31 Jan 2012 22:51:07 GMT
+      - Tue, 07 Feb 2012 00:45:11 GMT
       server:
       - Apache/2.2.3 (CentOS)
       soapserver:
@@ -47,14 +47,14 @@
       connection:
       - keep-alive
       cookie:
-      - Bugzilla_login=40167; Bugzilla_logincookie=7fhZjcSXrc
+      - Bugzilla_login=40167; Bugzilla_logincookie=cQlhUQc1Z6
   response: !ruby/struct:VCR::Response
     status: !ruby/struct:VCR::ResponseStatus
       code: 200
       message: OK
     headers:
       date:
-      - Tue, 31 Jan 2012 22:51:09 GMT
+      - Tue, 07 Feb 2012 00:45:13 GMT
       server:
       - Apache/2.2.3 (CentOS)
       soapserver:
@@ -88,14 +88,14 @@
       connection:
       - keep-alive
       cookie:
-      - Bugzilla_login=40167; Bugzilla_logincookie=7fhZjcSXrc
+      - Bugzilla_login=40167; Bugzilla_logincookie=cQlhUQc1Z6
   response: !ruby/struct:VCR::Response
     status: !ruby/struct:VCR::ResponseStatus
       code: 200
       message: OK
     headers:
       date:
-      - Tue, 31 Jan 2012 22:51:11 GMT
+      - Tue, 07 Feb 2012 00:45:15 GMT
       server:
       - Apache/2.2.3 (CentOS)
       soapserver:
@@ -125,14 +125,14 @@
       connection:
       - keep-alive
       cookie:
-      - Bugzilla_login=40167; Bugzilla_logincookie=7fhZjcSXrc
+      - Bugzilla_login=40167; Bugzilla_logincookie=cQlhUQc1Z6
   response: !ruby/struct:VCR::Response
     status: !ruby/struct:VCR::ResponseStatus
       code: 200
       message: OK
     headers:
       date:
-      - Tue, 31 Jan 2012 22:51:12 GMT
+      - Tue, 07 Feb 2012 00:45:18 GMT
       server:
       - Apache/2.2.3 (CentOS)
       soapserver:
@@ -158,14 +158,14 @@
       connection:
       - keep-alive
       cookie:
-      - Bugzilla_login=40167; Bugzilla_logincookie=7fhZjcSXrc
+      - Bugzilla_login=40167; Bugzilla_logincookie=cQlhUQc1Z6
   response: !ruby/struct:VCR::Response
     status: !ruby/struct:VCR::ResponseStatus
       code: 200
       message: OK
     headers:
       date:
-      - Tue, 31 Jan 2012 22:51:14 GMT
+      - Tue, 07 Feb 2012 00:45:20 GMT
       server:
       - Apache/2.2.3 (CentOS)
       soapserver:
@@ -195,14 +195,14 @@
       connection:
       - keep-alive
       cookie:
-      - Bugzilla_login=40167; Bugzilla_logincookie=7fhZjcSXrc
+      - Bugzilla_login=40167; Bugzilla_logincookie=cQlhUQc1Z6
   response: !ruby/struct:VCR::Response
     status: !ruby/struct:VCR::ResponseStatus
       code: 200
       message: OK
     headers:
       date:
-      - Tue, 31 Jan 2012 22:51:16 GMT
+      - Tue, 07 Feb 2012 00:45:22 GMT
       server:
       - Apache/2.2.3 (CentOS)
       soapserver:
@@ -232,14 +232,14 @@
       connection:
       - keep-alive
       cookie:
-      - Bugzilla_login=40167; Bugzilla_logincookie=7fhZjcSXrc
+      - Bugzilla_login=40167; Bugzilla_logincookie=cQlhUQc1Z6
   response: !ruby/struct:VCR::Response
     status: !ruby/struct:VCR::ResponseStatus
       code: 200
       message: OK
     headers:
       date:
-      - Tue, 31 Jan 2012 22:51:17 GMT
+      - Tue, 07 Feb 2012 00:45:24 GMT
       server:
       - Apache/2.2.3 (CentOS)
       soapserver:

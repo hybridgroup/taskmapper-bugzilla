@@ -65,23 +65,25 @@ module TicketMaster::Provider
 
       def updated_at
         begin
-          normalize_datetime(self[:last_change_time])      
+          normalize_datetime(self[:last_change_time])
         rescue
           self[:updated_at]
         end
       end
 
       def self.find_by_id(id)
-        self.new Rubyzilla::Bug.new id
+        bug = Rubyzilla::Bug.new id
+        self.new bug
       end
 
       def self.find(project_id, *options)
         if options.first.empty?
           TICKETS_API.new(project_id).bugs.collect { |bug| self.new bug }
-        elsif options.first.is_a? Array
-          TICKETS_API.new(project_id).bugs.collect { |bug| self.new bug }
+        elsif options[0].first.is_a? Array
+         options[0].first.collect { |bug_id| self.find_by_id bug_id }
         elsif options[0].first.is_a? Hash
-          TICKETS_API.new(project_id).bugs(options[0].first).collect { |bug| self.new bug }
+          bugs = TICKETS_API.new(project_id).bugs.collect { |bug| self.new bug }
+          search_by_attribute(bugs, options[0].first)
         end
       end
 

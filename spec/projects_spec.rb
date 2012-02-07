@@ -37,12 +37,6 @@ describe "Ticketmaster::Provider::Bugzilla::Project" do
     @project.name.should == 'WorldControl'
   end
 
-  it "should be able to find by attributes" do 
-    pending
-    VCR.use_cassette('project-by-attributes') { @project = @ticketmaster.project.find(:first, {:name => 'Core'}) }
-    @project.should be_an_instance_of(@klass)
-  end
-
   it "should be able to find by an array of id's" do 
     VCR.use_cassette('project-by-find-with-ids') { @project = @ticketmaster.project.find(:all, [1,2]) }
     @project.should be_an_instance_of(Array)

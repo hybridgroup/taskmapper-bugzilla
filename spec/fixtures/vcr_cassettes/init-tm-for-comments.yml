@@ -1,0 +1,37 @@
+---
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :post
+    uri: https://landfill.bugzilla.org:443/bugzilla-3.6-branch/xmlrpc.cgi
+    body: 
+    headers:
+      user-agent:
+      - XMLRPC::Client (Ruby 1.9.3)
+      content-type:
+      - text/xml; charset=utf-8
+      content-length:
+      - '376'
+      connection:
+      - keep-alive
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Tue, 07 Feb 2012 00:55:08 GMT
+      server:
+      - Apache/2.2.3 (CentOS)
+      soapserver:
+      - SOAP::Lite/Perl/0.712
+      set-cookie:
+      - Bugzilla_login=40167; path=/bugzilla-3.6-branch/; expires=Fri, 01-Jan-2038
+        00:00:00 GMT; secure; HttpOnly
+      - Bugzilla_logincookie=cgIr99krZk; path=/bugzilla-3.6-branch/; expires=Fri,
+        01-Jan-2038 00:00:00 GMT; secure; HttpOnly
+      content-length:
+      - '198'
+      content-type:
+      - text/xml
+    body: <?xml version="1.0" encoding="UTF-8"?><methodResponse><params><param><value><struct><member><name>id</name><value><int>40167</int></value></member></struct></value></param></params></methodResponse>
+    http_version: '1.1'

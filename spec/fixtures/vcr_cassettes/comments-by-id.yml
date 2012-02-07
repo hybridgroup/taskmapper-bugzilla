@@ -1,0 +1,124 @@
+---
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :post
+    uri: https://landfill.bugzilla.org:443/bugzilla-3.6-branch/xmlrpc.cgi
+    body: 
+    headers:
+      user-agent:
+      - XMLRPC::Client (Ruby 1.9.3)
+      content-type:
+      - text/xml; charset=utf-8
+      content-length:
+      - '253'
+      connection:
+      - keep-alive
+      cookie:
+      - Bugzilla_login=40167; Bugzilla_logincookie=cgIr99krZk
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Tue, 07 Feb 2012 01:07:33 GMT
+      server:
+      - Apache/2.2.3 (CentOS)
+      soapserver:
+      - SOAP::Lite/Perl/0.712
+      content-length:
+      - '4764'
+      content-type:
+      - text/xml
+    body: <?xml version="1.0" encoding="UTF-8"?><methodResponse><params><param><value><struct><member><name>faults</name><value><array><data
+      /></array></value></member><member><name>bugs</name><value><array><data><value><struct><member><name>priority</name><value><string>P1</string></value></member><member><name>status</name><value><string>NEW</string></value></member><member><name>last_change_time</name><value><dateTime.iso8601>20100202T07:25:13</dateTime.iso8601></value></member><member><name>component</name><value><string>EconomicControl</string></value></member><member><name>summary</name><value><string>Test
+      case for iTest</string></value></member><member><name>internals</name><value><struct><member><name>priority</name><value><string>P1</string></value></member><member><name>bug_id</name><value><int>7039</int></value></member><member><name>cclist_accessible</name><value><int>1</int></value></member><member><name>cf_drop_down</name><value><string>Option
+      1</string></value></member><member><name>assigned_to</name><value><int>32864</int></value></member><member><name>short_desc</name><value><string>Test
+      case for iTest</string></value></member><member><name>everconfirmed</name><value><int>1</int></value></member><member><name>bug_severity</name><value><string>critical</string></value></member><member><name>reporter_id</name><value><int>32952</int></value></member><member><name>estimated_time</name><value><double>0.00</double></value></member><member><name>remaining_time</name><value><double>0.00</double></value></member><member><name>cf_large_text</name><value><string
+      /></value></member><member><name>cf_free_text</name><value><string /></value></member><member><name>resolution</name><value><string
+      /></value></member><member><name>reporter_accessible</name><value><int>1</int></value></member><member><name>op_sys</name><value><string>Windows
+      XP</string></value></member><member><name>status</name><value><struct><member><name>sortkey</name><value><int>200</int></value></member><member><name>value</name><value><string>NEW</string></value></member><member><name>is_open</name><value><int>1</int></value></member><member><name>isactive</name><value><int>1</int></value></member><member><name>id</name><value><int>2</int></value></member></struct></value></member><member><name>_multi_selects</name><value><array><data><value><struct><member><name>mailhead</name><value><int>1</int></value></member><member><name>sortkey</name><value><int>551</int></value></member><member><name>custom</name><value><int>1</int></value></member><member><name>name</name><value><string>cf_mulitple_select</string></value></member><member><name>description</name><value><string>A
+      multiple-select box</string></value></member><member><name>buglist</name><value><int>0</int></value></member><member><name>obsolete</name><value><int>0</int></value></member><member><name>enter_bug</name><value><int>1</int></value></member><member><name>id</name><value><int>61</int></value></member><member><name>type</name><value><int>3</int></value></member></struct></value></data></array></value></member><member><name>bug_file_loc</name><value><string
+      /></value></member><member><name>product_id</name><value><int>1</int></value></member><member><name>rep_platform</name><value><string>PC</string></value></member><member><name>creation_ts</name><value><string>2008.09.29
+      13:33</string></value></member><member><name>status_whiteboard</name><value><string
+      /></value></member><member><name>bug_status</name><value><string>NEW</string></value></member><member><name>delta_ts</name><value><string>2010-02-01
+      23:25:13</string></value></member><member><name>version</name><value><double>1.0</double></value></member><member><name>component_id</name><value><int>2</int></value></member><member><name>component</name><value><string>EconomicControl</string></value></member><member><name>target_milestone</name><value><string>---</string></value></member><member><name>product</name><value><string>WorldControl</string></value></member></struct></value></member><member><name>is_open</name><value><boolean>1</boolean></value></member><member><name>assigned_to</name><value><string>bugzilla@cristilio.com</string></value></member><member><name>resolution</name><value><string
+      /></value></member><member><name>product</name><value><string>WorldControl</string></value></member><member><name>creation_time</name><value><dateTime.iso8601>20080929T20:33:00</dateTime.iso8601></value></member><member><name>id</name><value><int>7039</int></value></member><member><name>alias</name><value><string
+      /></value></member><member><name>severity</name><value><string>critical</string></value></member></struct></value></data></array></value></member></struct></value></param></params></methodResponse>
+    http_version: '1.1'
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :post
+    uri: https://landfill.bugzilla.org:443/bugzilla-3.6-branch/xmlrpc.cgi
+    body: 
+    headers:
+      user-agent:
+      - XMLRPC::Client (Ruby 1.9.3)
+      content-type:
+      - text/xml; charset=utf-8
+      content-length:
+      - '258'
+      connection:
+      - keep-alive
+      cookie:
+      - Bugzilla_login=40167; Bugzilla_logincookie=cgIr99krZk
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Tue, 07 Feb 2012 01:07:42 GMT
+      server:
+      - Apache/2.2.3 (CentOS)
+      soapserver:
+      - SOAP::Lite/Perl/0.712
+      content-length:
+      - '1644'
+      content-type:
+      - text/xml
+    body: ! '<?xml version="1.0" encoding="UTF-8"?><methodResponse><params><param><value><struct><member><name>products</name><value><array><data><value><struct><member><name>internals</name><value><struct><member><name>defaultmilestone</name><value><string>---</string></value></member><member><name>allows_unconfirmed</name><value><int>0</int></value></member><member><name>votesperuser</name><value><int>1000</int></value></member><member><name>name</name><value><string>WorldControl</string></value></member><member><name>maxvotesperbug</name><value><int>1</int></value></member><member><name>classification_id</name><value><int>2</int></value></member><member><name>description</name><value><string>A
+      small little program for controlling the world. Can be used&#xd;
+
+      for good or for evil. Sub-components can be created using the WorldControl API
+      to extend control into almost any aspect of reality.</string></value></member><member><name>votestoconfirm</name><value><int>0</int></value></member><member><name>isactive</name><value><int>1</int></value></member><member><name>id</name><value><int>1</int></value></member></struct></value></member><member><name>name</name><value><string>WorldControl</string></value></member><member><name>id</name><value><int>1</int></value></member><member><name>description</name><value><string>A
+      small little program for controlling the world. Can be used&#xd;
+
+      for good or for evil. Sub-components can be created using the WorldControl API
+      to extend control into almost any aspect of reality.</string></value></member></struct></value></data></array></value></member></struct></value></param></params></methodResponse>'
+    http_version: '1.1'
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :post
+    uri: https://landfill.bugzilla.org:443/bugzilla-3.6-branch/xmlrpc.cgi
+    body: 
+    headers:
+      user-agent:
+      - XMLRPC::Client (Ruby 1.9.3)
+      content-type:
+      - text/xml; charset=utf-8
+      content-length:
+      - '262'
+      connection:
+      - keep-alive
+      cookie:
+      - Bugzilla_login=40167; Bugzilla_logincookie=cgIr99krZk
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Tue, 07 Feb 2012 01:07:45 GMT
+      server:
+      - Apache/2.2.3 (CentOS)
+      soapserver:
+      - SOAP::Lite/Perl/0.712
+      content-length:
+      - '858'
+      content-type:
+      - text/xml
+    body: <?xml version="1.0" encoding="UTF-8"?><methodResponse><params><param><value><struct><member><name>bugs</name><value><struct
+      /></value></member><member><name>comments</name><value><struct><member><name>18575</name><value><struct><member><name>is_private</name><value><boolean>0</boolean></value></member><member><name>time</name><value><dateTime.iso8601>20110104T13:16:09</dateTime.iso8601></value></member><member><name>text</name><value><string>Na
+      ja, dann will ich mich auch mal verewigen; viele Grüsse an Bugzilla</string></value></member><member><name>id</name><value><int>18575</int></value></member><member><name>bug_id</name><value><int>1</int></value></member><member><name>author</name><value><string>gerd.heusel@web.de</string></value></member></struct></value></member></struct></value></member></struct></value></param></params></methodResponse>
+    http_version: '1.1'

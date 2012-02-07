@@ -39,15 +39,8 @@ module TicketMaster::Provider
         self.new PRODUCT_API.new id
       end
 
-      def self.find_by_attributes(*options)
-        options = options.first
-        if options.is_a? Hash
-          search_by_attribute(self.find_all, options)
-        else 
-          self.find_all.select do |project|
-            options.any? { |id| project.id == id }
-          end
-        end
+      def self.find_by_attributes(attributes = {})
+        search_by_attribute(self.find_all, attributes)
       end
 
       def self.find_all(*options)

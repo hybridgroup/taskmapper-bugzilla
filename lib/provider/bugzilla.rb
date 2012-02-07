@@ -34,16 +34,6 @@ module TicketMaster::Provider
       Rubyzilla::Bugzilla.logged_in?
     end
 
-    def projects(*options)
-      if options.empty?
-        PROJECT_API.list.collect { |product| Project.new product }
-      elsif options.first.is_a? Array
-        options.first.collect { |id| Project.find(id) }
-      elsif options.first.is_a? Hash
-        Project.find_by_attributes(options)
-      end
-    end
-
     def project(*options)
       unless options.empty?
         Project.find(options.first)

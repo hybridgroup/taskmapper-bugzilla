@@ -3,7 +3,7 @@ require File.expand_path(File.dirname(__FILE__) + '/spec_helper')
 describe "Ticketmaster::Provider::Bugzilla" do
   
   before(:each) do 
-    @ticketmaster = TicketMaster.new(:bugzilla, {:username => 'george.rafael@gmail.com', :password => '123456', :url => 'https://landfill.bugzilla.org/bugzilla-3.6-branch'})
+    VCR.use_cassette('tm-authentication') { @ticketmaster = TicketMaster.new(:bugzilla, {:username => 'george.rafael@gmail.com', :password => '123456', :url => 'https://landfill.bugzilla.org/bugzilla-3.6-branch'}) }
   end
 
   it "should be able to instantiate a new instance" do
@@ -12,7 +12,6 @@ describe "Ticketmaster::Provider::Bugzilla" do
   end
 
   it "should be able to validate it's authentication" do 
-    pending
     @ticketmaster.valid?.should be_true
   end
 

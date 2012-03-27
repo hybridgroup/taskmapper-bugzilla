@@ -4,20 +4,25 @@
 # -*- encoding: utf-8 -*-
 
 Gem::Specification.new do |s|
-  s.name = %q{ticketmaster-bugzilla}
-  s.version = "0.2.8"
+  s.name = "ticketmaster-bugzilla"
+  s.version = "0.2.9"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
-  s.authors = [%q{Rafael George}]
-  s.date = %q{2011-11-03}
-  s.description = %q{Allows ticketmaster to interact with Bugzilla.}
-  s.email = %q{rafael@hybridgroup.com}
+  s.authors = ["Rafael George"]
+  s.date = "2012-03-27"
+  s.description = "Allows ticketmaster to interact with Bugzilla."
+  s.email = "rafael@hybridgroup.com"
   s.extra_rdoc_files = [
     "LICENSE",
     "README.md"
   ]
   s.files = [
+    ".rbenv-gemsets",
+    ".rbenv-version",
     ".rvmrc",
+    ".travis.yml",
+    "Gemfile",
+    "Gemfile.lock",
     "LICENSE",
     "README.md",
     "Rakefile",
@@ -28,34 +33,75 @@ Gem::Specification.new do |s|
     "lib/provider/ticket.rb",
     "lib/ticketmaster-bugzilla.rb",
     "spec/comments_spec.rb",
+    "spec/fixtures/vcr_cassettes/comments-all.yml",
+    "spec/fixtures/vcr_cassettes/comments-by-array.yml",
+    "spec/fixtures/vcr_cassettes/comments-by-id.yml",
+    "spec/fixtures/vcr_cassettes/create-a-ticket.yml",
+    "spec/fixtures/vcr_cassettes/init-tm-for-comments.yml",
+    "spec/fixtures/vcr_cassettes/load-all-projects.yml",
+    "spec/fixtures/vcr_cassettes/load-all-tickets.yml",
+    "spec/fixtures/vcr_cassettes/load-by-attributes.yml",
+    "spec/fixtures/vcr_cassettes/load-by-id.yml",
+    "spec/fixtures/vcr_cassettes/load-tickets-by-ids.yml",
+    "spec/fixtures/vcr_cassettes/loading-a-project.yml",
+    "spec/fixtures/vcr_cassettes/project-by-attributes.yml",
+    "spec/fixtures/vcr_cassettes/project-by-find-method.yml",
+    "spec/fixtures/vcr_cassettes/project-by-find-with-ids.yml",
+    "spec/fixtures/vcr_cassettes/project-for-comment.yml",
+    "spec/fixtures/vcr_cassettes/project-initialization.yml",
+    "spec/fixtures/vcr_cassettes/projects-by-id.yml",
+    "spec/fixtures/vcr_cassettes/projects-by-ids.yml",
+    "spec/fixtures/vcr_cassettes/ticket-by-attribute.yml",
+    "spec/fixtures/vcr_cassettes/ticket-for-comment.yml",
+    "spec/fixtures/vcr_cassettes/ticketmaster-instance.yml",
+    "spec/fixtures/vcr_cassettes/tm-authentication.yml",
     "spec/projects_spec.rb",
     "spec/spec.opts",
     "spec/spec_helper.rb",
     "spec/ticketmaster-bugzilla_spec.rb",
     "spec/tickets_spec.rb",
+    "spec/vcr_setup.rb",
     "ticketmaster-bugzilla.gemspec"
   ]
-  s.homepage = %q{http://github.com/hybridgroup/ticketmaster-bugzilla}
-  s.require_paths = [%q{lib}]
-  s.rubygems_version = %q{1.8.6}
-  s.summary = %q{Ticketmaster Provider for Bugzilla}
+  s.homepage = "http://github.com/hybridgroup/ticketmaster-bugzilla"
+  s.require_paths = ["lib"]
+  s.rubygems_version = "1.8.17"
+  s.summary = "Ticketmaster Provider for Bugzilla"
 
   if s.respond_to? :specification_version then
     s.specification_version = 3
 
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
-      s.add_development_dependency(%q<rspec>, [">= 1.2.9"])
-      s.add_runtime_dependency(%q<ticketmaster>, [">= 0.6.0"])
-      s.add_runtime_dependency(%q<rubyzilla>, [">= 0"])
+      s.add_runtime_dependency(%q<ticketmaster>, ["= 0.6.10"])
+      s.add_runtime_dependency(%q<rubyzilla>, ["~> 0.1"])
+      s.add_development_dependency(%q<rspec>, ["~> 2.8"])
+      s.add_development_dependency(%q<bundler>, ["~> 1.1"])
+      s.add_development_dependency(%q<fakeweb>, ["~> 1.3"])
+      s.add_development_dependency(%q<vcr>, ["~> 1.11"])
+      s.add_development_dependency(%q<jeweler>, ["~> 1.6"])
+      s.add_development_dependency(%q<simplecov>, ["~> 0.5"])
+      s.add_development_dependency(%q<rcov>, ["~> 1.0"])
     else
-      s.add_dependency(%q<rspec>, [">= 1.2.9"])
-      s.add_dependency(%q<ticketmaster>, [">= 0.6.0"])
-      s.add_dependency(%q<rubyzilla>, [">= 0"])
+      s.add_dependency(%q<ticketmaster>, ["= 0.6.10"])
+      s.add_dependency(%q<rubyzilla>, ["~> 0.1"])
+      s.add_dependency(%q<rspec>, ["~> 2.8"])
+      s.add_dependency(%q<bundler>, ["~> 1.1"])
+      s.add_dependency(%q<fakeweb>, ["~> 1.3"])
+      s.add_dependency(%q<vcr>, ["~> 1.11"])
+      s.add_dependency(%q<jeweler>, ["~> 1.6"])
+      s.add_dependency(%q<simplecov>, ["~> 0.5"])
+      s.add_dependency(%q<rcov>, ["~> 1.0"])
     end
   else
-    s.add_dependency(%q<rspec>, [">= 1.2.9"])
-    s.add_dependency(%q<ticketmaster>, [">= 0.6.0"])
-    s.add_dependency(%q<rubyzilla>, [">= 0"])
+    s.add_dependency(%q<ticketmaster>, ["= 0.6.10"])
+    s.add_dependency(%q<rubyzilla>, ["~> 0.1"])
+    s.add_dependency(%q<rspec>, ["~> 2.8"])
+    s.add_dependency(%q<bundler>, ["~> 1.1"])
+    s.add_dependency(%q<fakeweb>, ["~> 1.3"])
+    s.add_dependency(%q<vcr>, ["~> 1.11"])
+    s.add_dependency(%q<jeweler>, ["~> 1.6"])
+    s.add_dependency(%q<simplecov>, ["~> 0.5"])
+    s.add_dependency(%q<rcov>, ["~> 1.0"])
   end
 end
 

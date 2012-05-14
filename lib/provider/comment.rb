@@ -1,12 +1,12 @@
-module TicketMaster::Provider
+module TaskMapper::Provider
   module Bugzilla
-    # The comment class for ticketmaster-bugzilla
+    # The comment class for taskmapper-bugzilla
     #
-    # Do any mapping between Ticketmaster and your system's comment model here
+    # Do any mapping between TaskMapper and your system's comment model here
     # versions of the ticket.
     #
     COMMENT_API = Rubyzilla::Bug
-    class Comment < TicketMaster::Provider::Base::Comment
+    class Comment < TaskMapper::Provider::Base::Comment
       # declare needed overloaded methods here
       def initialize(*object) 
         if object.first

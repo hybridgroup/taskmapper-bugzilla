@@ -3,10 +3,10 @@
   request: !ruby/struct:VCR::Request
     method: :post
     uri: https://landfill.bugzilla.org:443/bugzilla-3.6-branch/xmlrpc.cgi
-    body: 
+    body: !!null 
     headers:
       user-agent:
-      - XMLRPC::Client (Ruby 1.9.3)
+      - XMLRPC::Client (Ruby 1.9.2)
       content-type:
       - text/xml; charset=utf-8
       content-length:
@@ -19,7 +19,7 @@
       message: OK
     headers:
       date:
-      - Tue, 07 Feb 2012 00:44:39 GMT
+      - Mon, 14 May 2012 21:37:42 GMT
       server:
       - Apache/2.2.3 (CentOS)
       soapserver:
@@ -27,7 +27,7 @@
       set-cookie:
       - Bugzilla_login=40167; path=/bugzilla-3.6-branch/; expires=Fri, 01-Jan-2038
         00:00:00 GMT; secure; HttpOnly
-      - Bugzilla_logincookie=cQlhUQc1Z6; path=/bugzilla-3.6-branch/; expires=Fri,
+      - Bugzilla_logincookie=NFFudkd9GW; path=/bugzilla-3.6-branch/; expires=Fri,
         01-Jan-2038 00:00:00 GMT; secure; HttpOnly
       content-length:
       - '198'

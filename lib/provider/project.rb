@@ -1,8 +1,8 @@
-module TicketMaster::Provider
+module TaskMapper::Provider
   module Bugzilla
-    # Project class for ticketmaster-bugzilla
+    # Project class for taskmapper-bugzilla
     # 
-    class Project < TicketMaster::Provider::Base::Project
+    class Project < TaskMapper::Provider::Base::Project
       # declare needed overloaded methods here
       PRODUCT_API = Rubyzilla::Product
       
@@ -48,15 +48,15 @@ module TicketMaster::Provider
       end
 
       def tickets(*options)
-        TicketMaster::Provider::Bugzilla::Ticket.find(self.id, options)
+        TaskMapper::Provider::Bugzilla::Ticket.find(self.id, options)
       end
 
       def ticket(*options)
-        TicketMaster::Provider::Bugzilla::Ticket.find_by_id(options.first)
+        TaskMapper::Provider::Bugzilla::Ticket.find_by_id(options.first)
       end
 
       def ticket!(*options)
-        TicketMaster::Provider::Bugzilla::Ticket.create(self.id,*options)
+        TaskMapper::Provider::Bugzilla::Ticket.create(self.id,*options)
       end
 
     end

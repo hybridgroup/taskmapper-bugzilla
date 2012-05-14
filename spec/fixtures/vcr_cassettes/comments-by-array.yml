@@ -3,10 +3,10 @@
   request: !ruby/struct:VCR::Request
     method: :post
     uri: https://landfill.bugzilla.org:443/bugzilla-3.6-branch/xmlrpc.cgi
-    body: 
+    body: !!null 
     headers:
       user-agent:
-      - XMLRPC::Client (Ruby 1.9.3)
+      - XMLRPC::Client (Ruby 1.9.2)
       content-type:
       - text/xml; charset=utf-8
       content-length:
@@ -14,14 +14,14 @@
       connection:
       - keep-alive
       cookie:
-      - Bugzilla_login=40167; Bugzilla_logincookie=cgIr99krZk
+      - Bugzilla_login=40167; Bugzilla_logincookie=C9GwiDQyoJ
   response: !ruby/struct:VCR::Response
     status: !ruby/struct:VCR::ResponseStatus
       code: 200
       message: OK
     headers:
       date:
-      - Tue, 07 Feb 2012 01:01:34 GMT
+      - Mon, 14 May 2012 21:37:11 GMT
       server:
       - Apache/2.2.3 (CentOS)
       soapserver:
@@ -50,10 +50,10 @@
   request: !ruby/struct:VCR::Request
     method: :post
     uri: https://landfill.bugzilla.org:443/bugzilla-3.6-branch/xmlrpc.cgi
-    body: 
+    body: !!null 
     headers:
       user-agent:
-      - XMLRPC::Client (Ruby 1.9.3)
+      - XMLRPC::Client (Ruby 1.9.2)
       content-type:
       - text/xml; charset=utf-8
       content-length:
@@ -61,14 +61,14 @@
       connection:
       - keep-alive
       cookie:
-      - Bugzilla_login=40167; Bugzilla_logincookie=cgIr99krZk
+      - Bugzilla_login=40167; Bugzilla_logincookie=C9GwiDQyoJ
   response: !ruby/struct:VCR::Response
     status: !ruby/struct:VCR::ResponseStatus
       code: 200
       message: OK
     headers:
       date:
-      - Tue, 07 Feb 2012 01:01:36 GMT
+      - Mon, 14 May 2012 21:37:13 GMT
       server:
       - Apache/2.2.3 (CentOS)
       soapserver:
@@ -91,10 +91,10 @@
   request: !ruby/struct:VCR::Request
     method: :post
     uri: https://landfill.bugzilla.org:443/bugzilla-3.6-branch/xmlrpc.cgi
-    body: 
+    body: !!null 
     headers:
       user-agent:
-      - XMLRPC::Client (Ruby 1.9.3)
+      - XMLRPC::Client (Ruby 1.9.2)
       content-type:
       - text/xml; charset=utf-8
       content-length:
@@ -102,14 +102,14 @@
       connection:
       - keep-alive
       cookie:
-      - Bugzilla_login=40167; Bugzilla_logincookie=cgIr99krZk
+      - Bugzilla_login=40167; Bugzilla_logincookie=C9GwiDQyoJ
   response: !ruby/struct:VCR::Response
     status: !ruby/struct:VCR::ResponseStatus
       code: 200
       message: OK
     headers:
       date:
-      - Tue, 07 Feb 2012 01:01:37 GMT
+      - Mon, 14 May 2012 21:37:14 GMT
       server:
       - Apache/2.2.3 (CentOS)
       soapserver:

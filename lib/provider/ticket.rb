@@ -1,9 +1,9 @@
-module TicketMaster::Provider
+module TaskMapper::Provider
   module Bugzilla
-    # Ticket class for ticketmaster-bugzilla
+    # Ticket class for taskmapper-bugzilla
     #
     
-    class Ticket < TicketMaster::Provider::Base::Ticket
+    class Ticket < TaskMapper::Provider::Base::Ticket
       # declare needed overloaded methods here
       TICKETS_API = Rubyzilla::Product
       def initialize(*object)

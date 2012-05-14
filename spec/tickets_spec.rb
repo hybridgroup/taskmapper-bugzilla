@@ -1,15 +1,15 @@
 require File.expand_path(File.dirname(__FILE__) + '/spec_helper')
 
-describe "Ticketmaster::Provider::Bugzilla::Ticket" do
+describe "TaskMapper::Provider::Bugzilla::Ticket" do
 
   before(:all) do 
-    @klass = TicketMaster::Provider::Bugzilla::Ticket
+    @klass = TaskMapper::Provider::Bugzilla::Ticket
     bug = {:id => 7039}
   end
 
   before(:each) do 
-    VCR.use_cassette('ticketmaster-instance') { @ticketmaster = TicketMaster.new(:bugzilla, :username => 'george.rafael@gmail.com', :password => '123456', :url =>'https://landfill.bugzilla.org/bugzilla-3.6-branch') }
-    VCR.use_cassette('loading-a-project') { @project = @ticketmaster.project(20) }
+    VCR.use_cassette('taskmapper-instance') { @taskmapper = TaskMapper.new(:bugzilla, :username => 'george.rafael@gmail.com', :password => '123456', :url =>'https://landfill.bugzilla.org/bugzilla-3.6-branch') }
+    VCR.use_cassette('loading-a-project') { @project = @taskmapper.project(20) }
   end
 
   it "should be able to load all tickets" do 

@@ -4,13 +4,13 @@
 # -*- encoding: utf-8 -*-
 
 Gem::Specification.new do |s|
-  s.name = "ticketmaster-bugzilla"
+  s.name = "taskmapper-bugzilla"
   s.version = "0.2.9"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Rafael George"]
   s.date = "2012-03-27"
-  s.description = "Allows ticketmaster to interact with Bugzilla."
+  s.description = "Allows taskmapper to interact with Bugzilla."
   s.email = "rafael@hybridgroup.com"
   s.extra_rdoc_files = [
     "LICENSE",
@@ -31,7 +31,7 @@ Gem::Specification.new do |s|
     "lib/provider/comment.rb",
     "lib/provider/project.rb",
     "lib/provider/ticket.rb",
-    "lib/ticketmaster-bugzilla.rb",
+    "lib/taskmapper-bugzilla.rb",
     "spec/comments_spec.rb",
     "spec/fixtures/vcr_cassettes/comments-all.yml",
     "spec/fixtures/vcr_cassettes/comments-by-array.yml",
@@ -53,26 +53,26 @@ Gem::Specification.new do |s|
     "spec/fixtures/vcr_cassettes/projects-by-ids.yml",
     "spec/fixtures/vcr_cassettes/ticket-by-attribute.yml",
     "spec/fixtures/vcr_cassettes/ticket-for-comment.yml",
-    "spec/fixtures/vcr_cassettes/ticketmaster-instance.yml",
+    "spec/fixtures/vcr_cassettes/taskmapper-instance.yml",
     "spec/fixtures/vcr_cassettes/tm-authentication.yml",
     "spec/projects_spec.rb",
     "spec/spec.opts",
     "spec/spec_helper.rb",
-    "spec/ticketmaster-bugzilla_spec.rb",
+    "spec/taskmapper-bugzilla_spec.rb",
     "spec/tickets_spec.rb",
     "spec/vcr_setup.rb",
-    "ticketmaster-bugzilla.gemspec"
+    "taskmapper-bugzilla.gemspec"
   ]
-  s.homepage = "http://github.com/hybridgroup/ticketmaster-bugzilla"
+  s.homepage = "http://github.com/hybridgroup/taskmapper-bugzilla"
   s.require_paths = ["lib"]
   s.rubygems_version = "1.8.17"
-  s.summary = "Ticketmaster Provider for Bugzilla"
+  s.summary = "TaskMapper Provider for Bugzilla"
 
   if s.respond_to? :specification_version then
     s.specification_version = 3
 
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
-      s.add_runtime_dependency(%q<ticketmaster>, ["= 0.6.10"])
+      s.add_runtime_dependency(%q<taskmapper>, ["= 0.6.10"])
       s.add_runtime_dependency(%q<rubyzilla>, ["~> 0.1"])
       s.add_development_dependency(%q<rspec>, ["~> 2.8"])
       s.add_development_dependency(%q<bundler>, ["~> 1.1"])
@@ -82,7 +82,7 @@ Gem::Specification.new do |s|
       s.add_development_dependency(%q<simplecov>, ["~> 0.5"])
       s.add_development_dependency(%q<rcov>, ["~> 1.0"])
     else
-      s.add_dependency(%q<ticketmaster>, ["= 0.6.10"])
+      s.add_dependency(%q<taskmapper>, ["= 0.6.10"])
       s.add_dependency(%q<rubyzilla>, ["~> 0.1"])
       s.add_dependency(%q<rspec>, ["~> 2.8"])
       s.add_dependency(%q<bundler>, ["~> 1.1"])
@@ -93,7 +93,7 @@ Gem::Specification.new do |s|
       s.add_dependency(%q<rcov>, ["~> 1.0"])
     end
   else
-    s.add_dependency(%q<ticketmaster>, ["= 0.6.10"])
+    s.add_dependency(%q<taskmapper>, ["= 0.6.10"])
     s.add_dependency(%q<rubyzilla>, ["~> 0.1"])
     s.add_dependency(%q<rspec>, ["~> 2.8"])
     s.add_dependency(%q<bundler>, ["~> 1.1"])

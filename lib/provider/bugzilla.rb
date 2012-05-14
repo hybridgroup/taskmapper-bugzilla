@@ -1,19 +1,19 @@
-require 'ticketmaster'
+require 'taskmapper'
 
-module TicketMaster::Provider
-  # This is the Yoursystem Provider for ticketmaster
+module TaskMapper::Provider
+  # This is the Yoursystem Provider for taskmapper
   module Bugzilla
-    include TicketMaster::Provider::Base
+    include TaskMapper::Provider::Base
     PROJECT_API = Rubyzilla::Product
     
-    # This is for cases when you want to instantiate using TicketMaster::Provider::Yoursystem.new(auth)
+    # This is for cases when you want to instantiate using TaskMapper::Provider::Yoursystem.new(auth)
     def self.new(auth = {})
-      TicketMaster.new(:bugzilla, auth)
+      TaskMapper.new(:bugzilla, auth)
     end
     
     # declare needed overloaded methods here
     def authorize(auth = {})
-      @authentication ||= TicketMaster::Authenticator.new(auth)
+      @authentication ||= TaskMapper::Authenticator.new(auth)
       auth = @authentication
       if (auth.username.nil? || auth.url.nil? || auth.password.nil?)
         raise "Please provide username, password and url"

@@ -1,14 +1,14 @@
 require File.expand_path(File.dirname(__FILE__) + '/spec_helper')
 
-describe "Ticketmaster::Provider::Bugzilla::Comment" do
+describe "TaskMapper::Provider::Bugzilla::Comment" do
 
   before(:all) do
-    @klass = TicketMaster::Provider::Bugzilla::Comment
+    @klass = TaskMapper::Provider::Bugzilla::Comment
   end
 
   before(:each) do 
-    VCR.use_cassette('init-tm-for-comments') { @ticketmaster = TicketMaster.new(:bugzilla, {:username => 'george.rafael@gmail.com', :password => '123456', :url => 'https://landfill.bugzilla.org/bugzilla-3.6-branch'}) }
-    VCR.use_cassette('project-for-comment') { @project = @ticketmaster.project(20) }
+    VCR.use_cassette('init-tm-for-comments') { @taskmapper = TaskMapper.new(:bugzilla, {:username => 'george.rafael@gmail.com', :password => '123456', :url => 'https://landfill.bugzilla.org/bugzilla-3.6-branch'}) }
+    VCR.use_cassette('project-for-comment') { @project = @taskmapper.project(20) }
     VCR.use_cassette('ticket-for-comment') { @ticket = @project.ticket(7039) }
   end
 

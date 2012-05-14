@@ -1,20 +1,20 @@
-# ticketmaster-bugzilla
+# taskmapper-bugzilla
 
-This is a provider for [ticketmaster](http://ticketrb.com). It provides interoperability with [Bugzilla](http://bugzilla.org) and it's issue tracking system through the ticketmaster gem.
+This is a provider for [taskmapper](http://ticketrb.com). It provides interoperability with [Bugzilla](http://bugzilla.org) and it's issue tracking system through the taskmapper gem.
 
 # Usage and Examples
 
-First we have to instantiate a new ticketmaster instance, your bugzilla installation should have api access enable:
-bugzilla = TicketMaster.new(:bugzilla, {:username=> 'foo', :password => "bar", :url => "https://bugzilla.mozilla.org"})
+First we have to instantiate a new taskmapper instance, your bugzilla installation should have api access enable:
+bugzilla = TaskMapper.new(:bugzilla, {:username=> 'foo', :password => "bar", :url => "https://bugzilla.mozilla.org"})
 
 If you do not pass in the url, username and password, you won't get any information.
 
 ## Finding Projects(Products)
 
-projects = ticketmaster.projects # All projects
-projects = ticketmaster.projects([1,2,3]) # A list of projects based on id
-project = ticketmaster.project(1) # Single project
-project = ticketmaster.project(:id => 1) # Single project based on attributes
+projects = taskmapper.projects # All projects
+projects = taskmapper.projects([1,2,3]) # A list of projects based on id
+project = taskmapper.project(1) # Single project
+project = taskmapper.project(:id => 1) # Single project based on attributes
 
 ## Finding Tickets(Bugs)
 
@@ -51,15 +51,15 @@ comments = project.ticket(1).comments([1,2,3]) # List of comments based on id's
 ## Requirements
 
   * rubygems (obviously)
-  * ticketmaster gem (latest version preferred)
+  * taskmapper gem (latest version preferred)
   * jeweler gem (only if you want to repackage and develop)
   * guitsaru-rubyzilla
 
-  The ticketmaster gem should automatically be installed during the installation of this gem if it is not already installed.
+  The taskmapper gem should automatically be installed during the installation of this gem if it is not already installed.
 
 ## Other Notes
 
-  Since this and the ticketmaster gem is still primarily a work-in-progress, minor changes may be incompatible with previous versions. Please be careful about using and updating this gem in production.
+  Since this and the taskmapper gem is still primarily a work-in-progress, minor changes may be incompatible with previous versions. Please be careful about using and updating this gem in production.
 
   If you see or find any issues, feel free to open up an issue report.
 

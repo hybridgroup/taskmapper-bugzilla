@@ -3,10 +3,10 @@
   request: !ruby/struct:VCR::Request
     method: :post
     uri: https://landfill.bugzilla.org:443/bugzilla-3.6-branch/xmlrpc.cgi
-    body: 
+    body: !!null 
     headers:
       user-agent:
-      - XMLRPC::Client (Ruby 1.9.3)
+      - XMLRPC::Client (Ruby 1.9.2)
       content-type:
       - text/xml; charset=utf-8
       content-length:
@@ -14,14 +14,14 @@
       connection:
       - keep-alive
       cookie:
-      - Bugzilla_login=40167; Bugzilla_logincookie=cQlhUQc1Z6
+      - Bugzilla_login=40167; Bugzilla_logincookie=CJhhx44CpV
   response: !ruby/struct:VCR::Response
     status: !ruby/struct:VCR::ResponseStatus
       code: 200
       message: OK
     headers:
       date:
-      - Tue, 07 Feb 2012 00:44:41 GMT
+      - Mon, 14 May 2012 21:37:25 GMT
       server:
       - Apache/2.2.3 (CentOS)
       soapserver:
@@ -36,10 +36,10 @@
   request: !ruby/struct:VCR::Request
     method: :post
     uri: https://landfill.bugzilla.org:443/bugzilla-3.6-branch/xmlrpc.cgi
-    body: 
+    body: !!null 
     headers:
       user-agent:
-      - XMLRPC::Client (Ruby 1.9.3)
+      - XMLRPC::Client (Ruby 1.9.2)
       content-type:
       - text/xml; charset=utf-8
       content-length:
@@ -47,14 +47,14 @@
       connection:
       - keep-alive
       cookie:
-      - Bugzilla_login=40167; Bugzilla_logincookie=cQlhUQc1Z6
+      - Bugzilla_login=40167; Bugzilla_logincookie=CJhhx44CpV
   response: !ruby/struct:VCR::Response
     status: !ruby/struct:VCR::ResponseStatus
       code: 200
       message: OK
     headers:
       date:
-      - Tue, 07 Feb 2012 00:44:43 GMT
+      - Mon, 14 May 2012 21:37:27 GMT
       server:
       - Apache/2.2.3 (CentOS)
       soapserver:
@@ -77,10 +77,10 @@
   request: !ruby/struct:VCR::Request
     method: :post
     uri: https://landfill.bugzilla.org:443/bugzilla-3.6-branch/xmlrpc.cgi
-    body: 
+    body: !!null 
     headers:
       user-agent:
-      - XMLRPC::Client (Ruby 1.9.3)
+      - XMLRPC::Client (Ruby 1.9.2)
       content-type:
       - text/xml; charset=utf-8
       content-length:
@@ -88,14 +88,14 @@
       connection:
       - keep-alive
       cookie:
-      - Bugzilla_login=40167; Bugzilla_logincookie=cQlhUQc1Z6
+      - Bugzilla_login=40167; Bugzilla_logincookie=CJhhx44CpV
   response: !ruby/struct:VCR::Response
     status: !ruby/struct:VCR::ResponseStatus
       code: 200
       message: OK
     headers:
       date:
-      - Tue, 07 Feb 2012 00:44:46 GMT
+      - Mon, 14 May 2012 21:37:28 GMT
       server:
       - Apache/2.2.3 (CentOS)
       soapserver:
@@ -114,10 +114,10 @@
   request: !ruby/struct:VCR::Request
     method: :post
     uri: https://landfill.bugzilla.org:443/bugzilla-3.6-branch/xmlrpc.cgi
-    body: 
+    body: !!null 
     headers:
       user-agent:
-      - XMLRPC::Client (Ruby 1.9.3)
+      - XMLRPC::Client (Ruby 1.9.2)
       content-type:
       - text/xml; charset=utf-8
       content-length:
@@ -125,14 +125,14 @@
       connection:
       - keep-alive
       cookie:
-      - Bugzilla_login=40167; Bugzilla_logincookie=cQlhUQc1Z6
+      - Bugzilla_login=40167; Bugzilla_logincookie=CJhhx44CpV
   response: !ruby/struct:VCR::Response
     status: !ruby/struct:VCR::ResponseStatus
       code: 200
       message: OK
     headers:
       date:
-      - Tue, 07 Feb 2012 00:44:48 GMT
+      - Mon, 14 May 2012 21:37:29 GMT
       server:
       - Apache/2.2.3 (CentOS)
       soapserver:
@@ -147,10 +147,10 @@
   request: !ruby/struct:VCR::Request
     method: :post
     uri: https://landfill.bugzilla.org:443/bugzilla-3.6-branch/xmlrpc.cgi
-    body: 
+    body: !!null 
     headers:
       user-agent:
-      - XMLRPC::Client (Ruby 1.9.3)
+      - XMLRPC::Client (Ruby 1.9.2)
       content-type:
       - text/xml; charset=utf-8
       content-length:
@@ -158,14 +158,14 @@
       connection:
       - keep-alive
       cookie:
-      - Bugzilla_login=40167; Bugzilla_logincookie=cQlhUQc1Z6
+      - Bugzilla_login=40167; Bugzilla_logincookie=CJhhx44CpV
   response: !ruby/struct:VCR::Response
     status: !ruby/struct:VCR::ResponseStatus
       code: 200
       message: OK
     headers:
       date:
-      - Tue, 07 Feb 2012 00:44:50 GMT
+      - Mon, 14 May 2012 21:37:30 GMT
       server:
       - Apache/2.2.3 (CentOS)
       soapserver:
@@ -184,10 +184,10 @@
   request: !ruby/struct:VCR::Request
     method: :post
     uri: https://landfill.bugzilla.org:443/bugzilla-3.6-branch/xmlrpc.cgi
-    body: 
+    body: !!null 
     headers:
       user-agent:
-      - XMLRPC::Client (Ruby 1.9.3)
+      - XMLRPC::Client (Ruby 1.9.2)
       content-type:
       - text/xml; charset=utf-8
       content-length:
@@ -195,14 +195,14 @@
       connection:
       - keep-alive
       cookie:
-      - Bugzilla_login=40167; Bugzilla_logincookie=cQlhUQc1Z6
+      - Bugzilla_login=40167; Bugzilla_logincookie=CJhhx44CpV
   response: !ruby/struct:VCR::Response
     status: !ruby/struct:VCR::ResponseStatus
       code: 200
       message: OK
     headers:
       date:
-      - Tue, 07 Feb 2012 00:44:53 GMT
+      - Mon, 14 May 2012 21:37:31 GMT
       server:
       - Apache/2.2.3 (CentOS)
       soapserver:
@@ -221,10 +221,10 @@
   request: !ruby/struct:VCR::Request
     method: :post
     uri: https://landfill.bugzilla.org:443/bugzilla-3.6-branch/xmlrpc.cgi
-    body: 
+    body: !!null 
     headers:
       user-agent:
-      - XMLRPC::Client (Ruby 1.9.3)
+      - XMLRPC::Client (Ruby 1.9.2)
       content-type:
       - text/xml; charset=utf-8
       content-length:
@@ -232,14 +232,14 @@
       connection:
       - keep-alive
       cookie:
-      - Bugzilla_login=40167; Bugzilla_logincookie=cQlhUQc1Z6
+      - Bugzilla_login=40167; Bugzilla_logincookie=CJhhx44CpV
   response: !ruby/struct:VCR::Response
     status: !ruby/struct:VCR::ResponseStatus
       code: 200
       message: OK
     headers:
       date:
-      - Tue, 07 Feb 2012 00:44:55 GMT
+      - Mon, 14 May 2012 21:37:32 GMT
       server:
       - Apache/2.2.3 (CentOS)
       soapserver:

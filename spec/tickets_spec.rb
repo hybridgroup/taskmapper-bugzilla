@@ -1,6 +1,6 @@
 require File.expand_path(File.dirname(__FILE__) + '/spec_helper')
 
-describe "TaskMapper::Provider::Bugzilla::Ticket" do
+describe TaskMapper::Provider::Bugzilla::Ticket do
 
   before(:all) do 
     @klass = TaskMapper::Provider::Bugzilla::Ticket

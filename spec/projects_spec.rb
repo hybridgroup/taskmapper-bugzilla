@@ -1,6 +1,6 @@
 require File.expand_path(File.dirname(__FILE__) + '/spec_helper')
 
-describe "TaskMapper::Provider::Bugzilla::Project" do
+describe TaskMapper::Provider::Bugzilla::Project do
 
   before(:all) do 
     @core = {:id => 1, :name => 'Core'}

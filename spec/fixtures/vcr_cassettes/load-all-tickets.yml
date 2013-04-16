@@ -14,24 +14,26 @@
       connection:
       - keep-alive
       cookie:
-      - Bugzilla_login=40167; Bugzilla_logincookie=0PvluuPfz1
+      - Bugzilla_login=40167; Bugzilla_logincookie=P5OUXWhMEA
   response: !ruby/struct:VCR::Response
     status: !ruby/struct:VCR::ResponseStatus
       code: 200
       message: OK
     headers:
       date:
-      - Mon, 14 May 2012 21:36:09 GMT
+      - Tue, 16 Apr 2013 14:52:12 GMT
       server:
       - Apache/2.2.3 (CentOS)
       soapserver:
       - SOAP::Lite/Perl/0.712
       content-length:
       - '1307'
+      keep-alive:
+      - timeout=15, max=100
       content-type:
       - text/xml
-    body: <?xml version="1.0" encoding="UTF-8"?><methodResponse><params><param><value><struct><member><name>products</name><value><array><data><value><struct><member><name>internals</name><value><struct><member><name>defaultmilestone</name><value><string>---</string></value></member><member><name>allows_unconfirmed</name><value><int>0</int></value></member><member><name>votesperuser</name><value><int>0</int></value></member><member><name>name</name><value><string>LJL
-      Test Product</string></value></member><member><name>maxvotesperbug</name><value><int>10000</int></value></member><member><name>classification_id</name><value><int>1</int></value></member><member><name>description</name><value><string>Test
+    body: <?xml version="1.0" encoding="UTF-8"?><methodResponse><params><param><value><struct><member><name>products</name><value><array><data><value><struct><member><name>internals</name><value><struct><member><name>defaultmilestone</name><value><string>---</string></value></member><member><name>votesperuser</name><value><int>0</int></value></member><member><name>allows_unconfirmed</name><value><int>0</int></value></member><member><name>name</name><value><string>LJL
+      Test Product</string></value></member><member><name>classification_id</name><value><int>1</int></value></member><member><name>maxvotesperbug</name><value><int>10000</int></value></member><member><name>description</name><value><string>Test
       product description</string></value></member><member><name>votestoconfirm</name><value><int>0</int></value></member><member><name>isactive</name><value><int>1</int></value></member><member><name>id</name><value><int>20</int></value></member></struct></value></member><member><name>name</name><value><string>LJL
       Test Product</string></value></member><member><name>id</name><value><int>20</int></value></member><member><name>description</name><value><string>Test
       product description</string></value></member></struct></value></data></array></value></member></struct></value></param></params></methodResponse>
@@ -51,52 +53,92 @@
       connection:
       - keep-alive
       cookie:
-      - Bugzilla_login=40167; Bugzilla_logincookie=0PvluuPfz1
+      - Bugzilla_login=40167; Bugzilla_logincookie=P5OUXWhMEA
   response: !ruby/struct:VCR::Response
     status: !ruby/struct:VCR::ResponseStatus
       code: 200
       message: OK
     headers:
       date:
-      - Mon, 14 May 2012 21:36:10 GMT
+      - Tue, 16 Apr 2013 14:52:14 GMT
       server:
       - Apache/2.2.3 (CentOS)
       soapserver:
       - SOAP::Lite/Perl/0.712
       content-length:
-      - '9199'
+      - '21583'
+      keep-alive:
+      - timeout=15, max=100
       content-type:
       - text/xml
-    body: <?xml version="1.0" encoding="UTF-8"?><methodResponse><params><param><value><struct><member><name>bugs</name><value><array><data><value><struct><member><name>priority</name><value><string>P3</string></value></member><member><name>status</name><value><string>RESOLVED</string></value></member><member><name>last_change_time</name><value><dateTime.iso8601>20120418T14:55:28</dateTime.iso8601></value></member><member><name>component</name><value><string>Component
-      1</string></value></member><member><name>summary</name><value><string>this is
-      a test bug</string></value></member><member><name>internals</name><value><struct><member><name>priority</name><value><string>P3</string></value></member><member><name>bug_id</name><value><int>11912</int></value></member><member><name>cclist_accessible</name><value><int>1</int></value></member><member><name>cf_drop_down</name><value><string>---</string></value></member><member><name>assigned_to</name><value><int>36544</int></value></member><member><name>short_desc</name><value><string>this
-      is a test bug</string></value></member><member><name>everconfirmed</name><value><int>1</int></value></member><member><name>bug_severity</name><value><string>normal</string></value></member><member><name>reporter_id</name><value><int>40837</int></value></member><member><name>estimated_time</name><value><double>0.00</double></value></member><member><name>remaining_time</name><value><double>0.00</double></value></member><member><name>cf_large_text</name><value><string
-      /></value></member><member><name>cf_free_text</name><value><string /></value></member><member><name>resolution</name><value><string>FIXED</string></value></member><member><name>reporter_accessible</name><value><int>1</int></value></member><member><name>op_sys</name><value><string>Mac
-      OS X 10.0</string></value></member><member><name>status</name><value><struct><member><name>sortkey</name><value><int>500</int></value></member><member><name>value</name><value><string>RESOLVED</string></value></member><member><name>is_open</name><value><int>0</int></value></member><member><name>isactive</name><value><int>1</int></value></member><member><name>id</name><value><int>5</int></value></member></struct></value></member><member><name>_multi_selects</name><value><array><data><value><struct><member><name>mailhead</name><value><int>1</int></value></member><member><name>sortkey</name><value><int>551</int></value></member><member><name>custom</name><value><int>1</int></value></member><member><name>name</name><value><string>cf_mulitple_select</string></value></member><member><name>description</name><value><string>A
-      multiple-select box</string></value></member><member><name>buglist</name><value><int>0</int></value></member><member><name>obsolete</name><value><int>0</int></value></member><member><name>enter_bug</name><value><int>1</int></value></member><member><name>id</name><value><int>61</int></value></member><member><name>type</name><value><int>3</int></value></member></struct></value></data></array></value></member><member><name>bug_file_loc</name><value><string
-      /></value></member><member><name>product_id</name><value><int>20</int></value></member><member><name>rep_platform</name><value><string>PC</string></value></member><member><name>creation_ts</name><value><string>2012.04.18
-      07:53</string></value></member><member><name>status_whiteboard</name><value><string
-      /></value></member><member><name>bug_status</name><value><string>RESOLVED</string></value></member><member><name>delta_ts</name><value><string>2012-04-18
-      07:55:28</string></value></member><member><name>version</name><value><double>1.0</double></value></member><member><name>component_id</name><value><int>28</int></value></member><member><name>component</name><value><string>Component
+    body: <?xml version="1.0" encoding="UTF-8"?><methodResponse><params><param><value><struct><member><name>bugs</name><value><array><data><value><struct><member><name>priority</name><value><string>P3</string></value></member><member><name>status</name><value><string>NEW</string></value></member><member><name>last_change_time</name><value><dateTime.iso8601>20130321T11:02:48</dateTime.iso8601></value></member><member><name>component</name><value><string>Component
+      1</string></value></member><member><name>summary</name><value><string>test case</string></value></member><member><name>internals</name><value><struct><member><name>priority</name><value><string>P3</string></value></member><member><name>bug_id</name><value><int>21812</int></value></member><member><name>cclist_accessible</name><value><int>1</int></value></member><member><name>cf_drop_down</name><value><string>---</string></value></member><member><name>assigned_to</name><value><int>41499</int></value></member><member><name>everconfirmed</name><value><int>1</int></value></member><member><name>short_desc</name><value><string>test
+      case</string></value></member><member><name>bug_severity</name><value><string>normal</string></value></member><member><name>estimated_time</name><value><double>12.00</double></value></member><member><name>reporter_id</name><value><int>41500</int></value></member><member><name>remaining_time</name><value><double>12.00</double></value></member><member><name>cf_large_text</name><value><string
+      /></value></member><member><name>reporter_accessible</name><value><int>1</int></value></member><member><name>resolution</name><value><string
+      /></value></member><member><name>cf_free_text</name><value><string /></value></member><member><name>alias</name><value><string>sumanta1</string></value></member><member><name>op_sys</name><value><string>Windows
+      XP</string></value></member><member><name>status</name><value><struct><member><name>sortkey</name><value><int>200</int></value></member><member><name>value</name><value><string>NEW</string></value></member><member><name>is_open</name><value><int>1</int></value></member><member><name>isactive</name><value><int>1</int></value></member><member><name>id</name><value><int>2</int></value></member></struct></value></member><member><name>bug_file_loc</name><value><string
+      /></value></member><member><name>product_id</name><value><int>20</int></value></member><member><name>rep_platform</name><value><string>PC</string></value></member><member><name>creation_ts</name><value><string>2013.03.21
+      04:02</string></value></member><member><name>status_whiteboard</name><value><string
+      /></value></member><member><name>bug_status</name><value><string>NEW</string></value></member><member><name>delta_ts</name><value><string>2013-03-21
+      04:02:48</string></value></member><member><name>version</name><value><double>1.0</double></value></member><member><name>deadline</name><value><string>2013-04-14</string></value></member><member><name>component_id</name><value><int>28</int></value></member><member><name>component</name><value><string>Component
       1</string></value></member><member><name>target_milestone</name><value><string>---</string></value></member><member><name>product</name><value><string>LJL
-      Test Product</string></value></member></struct></value></member><member><name>is_open</name><value><boolean>0</boolean></value></member><member><name>assigned_to</name><value><string>tests.lisa@gmail.com</string></value></member><member><name>resolution</name><value><string>FIXED</string></value></member><member><name>product</name><value><string>LJL
-      Test Product</string></value></member><member><name>creation_time</name><value><dateTime.iso8601>20120418T14:53:00</dateTime.iso8601></value></member><member><name>id</name><value><int>11912</int></value></member><member><name>alias</name><value><string
-      /></value></member><member><name>severity</name><value><string>normal</string></value></member></struct></value><value><struct><member><name>priority</name><value><string>P3</string></value></member><member><name>status</name><value><string>ASSIGNED</string></value></member><member><name>last_change_time</name><value><dateTime.iso8601>20120502T07:03:52</dateTime.iso8601></value></member><member><name>component</name><value><string>Component
-      1</string></value></member><member><name>summary</name><value><string>This a
-      new bug</string></value></member><member><name>internals</name><value><struct><member><name>priority</name><value><string>P3</string></value></member><member><name>bug_id</name><value><int>11929</int></value></member><member><name>cclist_accessible</name><value><int>1</int></value></member><member><name>cf_drop_down</name><value><string>---</string></value></member><member><name>assigned_to</name><value><int>36544</int></value></member><member><name>short_desc</name><value><string>This
-      a new bug</string></value></member><member><name>everconfirmed</name><value><int>1</int></value></member><member><name>bug_severity</name><value><string>normal</string></value></member><member><name>reporter_id</name><value><int>40856</int></value></member><member><name>estimated_time</name><value><double>0.00</double></value></member><member><name>remaining_time</name><value><double>0.00</double></value></member><member><name>cf_large_text</name><value><string
-      /></value></member><member><name>cf_free_text</name><value><string /></value></member><member><name>resolution</name><value><string
-      /></value></member><member><name>reporter_accessible</name><value><int>1</int></value></member><member><name>op_sys</name><value><string>Windows
-      NT</string></value></member><member><name>status</name><value><struct><member><name>sortkey</name><value><int>300</int></value></member><member><name>value</name><value><string>ASSIGNED</string></value></member><member><name>is_open</name><value><int>1</int></value></member><member><name>isactive</name><value><int>1</int></value></member><member><name>id</name><value><int>3</int></value></member></struct></value></member><member><name>_multi_selects</name><value><array><data><value><struct><member><name>mailhead</name><value><int>1</int></value></member><member><name>sortkey</name><value><int>551</int></value></member><member><name>custom</name><value><int>1</int></value></member><member><name>name</name><value><string>cf_mulitple_select</string></value></member><member><name>description</name><value><string>A
-      multiple-select box</string></value></member><member><name>buglist</name><value><int>0</int></value></member><member><name>obsolete</name><value><int>0</int></value></member><member><name>enter_bug</name><value><int>1</int></value></member><member><name>id</name><value><int>61</int></value></member><member><name>type</name><value><int>3</int></value></member></struct></value></data></array></value></member><member><name>bug_file_loc</name><value><string
-      /></value></member><member><name>product_id</name><value><int>20</int></value></member><member><name>rep_platform</name><value><string>PC</string></value></member><member><name>creation_ts</name><value><string>2012.05.02
-      00:02</string></value></member><member><name>status_whiteboard</name><value><string
-      /></value></member><member><name>bug_status</name><value><string>ASSIGNED</string></value></member><member><name>delta_ts</name><value><string>2012-05-02
-      00:03:52</string></value></member><member><name>version</name><value><double>1.0</double></value></member><member><name>component_id</name><value><int>28</int></value></member><member><name>component</name><value><string>Component
+      Test Product</string></value></member></struct></value></member><member><name>is_open</name><value><boolean>1</boolean></value></member><member><name>assigned_to</name><value><string>lucky.subash.pradhan@gmail.com</string></value></member><member><name>resolution</name><value><string
+      /></value></member><member><name>product</name><value><string>LJL Test Product</string></value></member><member><name>creation_time</name><value><dateTime.iso8601>20130321T11:02:00</dateTime.iso8601></value></member><member><name>id</name><value><int>21812</int></value></member><member><name>alias</name><value><string>sumanta1</string></value></member><member><name>severity</name><value><string>normal</string></value></member></struct></value><value><struct><member><name>priority</name><value><string>P3</string></value></member><member><name>status</name><value><string>NEW</string></value></member><member><name>last_change_time</name><value><dateTime.iso8601>20130329T08:16:28</dateTime.iso8601></value></member><member><name>component</name><value><string>Component
+      1</string></value></member><member><name>summary</name><value><string>Test bug</string></value></member><member><name>internals</name><value><struct><member><name>priority</name><value><string>P3</string></value></member><member><name>bug_id</name><value><int>21828</int></value></member><member><name>cclist_accessible</name><value><int>1</int></value></member><member><name>cf_drop_down</name><value><string>---</string></value></member><member><name>assigned_to</name><value><int>36544</int></value></member><member><name>everconfirmed</name><value><int>1</int></value></member><member><name>short_desc</name><value><string>Test
+      bug</string></value></member><member><name>bug_severity</name><value><string>normal</string></value></member><member><name>estimated_time</name><value><double>0.00</double></value></member><member><name>reporter_id</name><value><int>41264</int></value></member><member><name>remaining_time</name><value><double>0.00</double></value></member><member><name>cf_large_text</name><value><string
+      /></value></member><member><name>reporter_accessible</name><value><int>1</int></value></member><member><name>resolution</name><value><string
+      /></value></member><member><name>cf_free_text</name><value><string /></value></member><member><name>op_sys</name><value><string>Windows
+      XP</string></value></member><member><name>status</name><value><struct><member><name>sortkey</name><value><int>200</int></value></member><member><name>value</name><value><string>NEW</string></value></member><member><name>is_open</name><value><int>1</int></value></member><member><name>isactive</name><value><int>1</int></value></member><member><name>id</name><value><int>2</int></value></member></struct></value></member><member><name>_multi_selects</name><value><array><data><value><struct><member><name>mailhead</name><value><int>1</int></value></member><member><name>sortkey</name><value><int>551</int></value></member><member><name>name</name><value><string>cf_mulitple_select</string></value></member><member><name>custom</name><value><int>1</int></value></member><member><name>description</name><value><string>A
+      multiple-select box</string></value></member><member><name>obsolete</name><value><int>0</int></value></member><member><name>buglist</name><value><int>0</int></value></member><member><name>enter_bug</name><value><int>1</int></value></member><member><name>type</name><value><int>3</int></value></member><member><name>id</name><value><int>61</int></value></member></struct></value></data></array></value></member><member><name>bug_file_loc</name><value><string
+      /></value></member><member><name>product_id</name><value><int>20</int></value></member><member><name>rep_platform</name><value><string>PC</string></value></member><member><name>creation_ts</name><value><string>2013.03.29
+      01:16</string></value></member><member><name>status_whiteboard</name><value><string
+      /></value></member><member><name>bug_status</name><value><string>NEW</string></value></member><member><name>delta_ts</name><value><string>2013-03-29
+      01:16:28</string></value></member><member><name>version</name><value><double>1.0</double></value></member><member><name>component_id</name><value><int>28</int></value></member><member><name>component</name><value><string>Component
       1</string></value></member><member><name>target_milestone</name><value><string>---</string></value></member><member><name>product</name><value><string>LJL
       Test Product</string></value></member></struct></value></member><member><name>is_open</name><value><boolean>1</boolean></value></member><member><name>assigned_to</name><value><string>tests.lisa@gmail.com</string></value></member><member><name>resolution</name><value><string
-      /></value></member><member><name>product</name><value><string>LJL Test Product</string></value></member><member><name>creation_time</name><value><dateTime.iso8601>20120502T07:02:00</dateTime.iso8601></value></member><member><name>id</name><value><int>11929</int></value></member><member><name>alias</name><value><string
-      /></value></member><member><name>severity</name><value><string>normal</string></value></member></struct></value></data></array></value></member></struct></value></param></params></methodResponse>
+      /></value></member><member><name>product</name><value><string>LJL Test Product</string></value></member><member><name>creation_time</name><value><dateTime.iso8601>20130329T08:16:00</dateTime.iso8601></value></member><member><name>id</name><value><int>21828</int></value></member><member><name>alias</name><value><string
+      /></value></member><member><name>severity</name><value><string>normal</string></value></member></struct></value><value><struct><member><name>priority</name><value><string>P3</string></value></member><member><name>status</name><value><string>RESOLVED</string></value></member><member><name>last_change_time</name><value><dateTime.iso8601>20130331T05:49:24</dateTime.iso8601></value></member><member><name>component</name><value><string>Component
+      1</string></value></member><member><name>summary</name><value><string>lable
+      was disabled</string></value></member><member><name>internals</name><value><struct><member><name>priority</name><value><string>P3</string></value></member><member><name>bug_id</name><value><int>21830</int></value></member><member><name>cclist_accessible</name><value><int>1</int></value></member><member><name>cf_drop_down</name><value><string>---</string></value></member><member><name>assigned_to</name><value><int>36544</int></value></member><member><name>everconfirmed</name><value><int>1</int></value></member><member><name>short_desc</name><value><string>lable
+      was disabled</string></value></member><member><name>bug_severity</name><value><string>normal</string></value></member><member><name>estimated_time</name><value><double>0.00</double></value></member><member><name>reporter_id</name><value><int>41513</int></value></member><member><name>remaining_time</name><value><double>0.00</double></value></member><member><name>cf_large_text</name><value><string
+      /></value></member><member><name>reporter_accessible</name><value><int>1</int></value></member><member><name>resolution</name><value><string>INVALID</string></value></member><member><name>cf_free_text</name><value><string
+      /></value></member><member><name>op_sys</name><value><string>Windows NT</string></value></member><member><name>status</name><value><struct><member><name>sortkey</name><value><int>500</int></value></member><member><name>value</name><value><string>RESOLVED</string></value></member><member><name>is_open</name><value><int>0</int></value></member><member><name>isactive</name><value><int>1</int></value></member><member><name>id</name><value><int>5</int></value></member></struct></value></member><member><name>_multi_selects</name><value><array><data><value><struct><member><name>mailhead</name><value><int>1</int></value></member><member><name>sortkey</name><value><int>551</int></value></member><member><name>name</name><value><string>cf_mulitple_select</string></value></member><member><name>custom</name><value><int>1</int></value></member><member><name>description</name><value><string>A
+      multiple-select box</string></value></member><member><name>obsolete</name><value><int>0</int></value></member><member><name>buglist</name><value><int>0</int></value></member><member><name>enter_bug</name><value><int>1</int></value></member><member><name>type</name><value><int>3</int></value></member><member><name>id</name><value><int>61</int></value></member></struct></value></data></array></value></member><member><name>bug_file_loc</name><value><string
+      /></value></member><member><name>product_id</name><value><int>20</int></value></member><member><name>rep_platform</name><value><string>PC</string></value></member><member><name>creation_ts</name><value><string>2013.03.30
+      22:19</string></value></member><member><name>status_whiteboard</name><value><string
+      /></value></member><member><name>bug_status</name><value><string>RESOLVED</string></value></member><member><name>delta_ts</name><value><string>2013-03-30
+      22:49:24</string></value></member><member><name>version</name><value><double>1.0</double></value></member><member><name>component_id</name><value><int>28</int></value></member><member><name>component</name><value><string>Component
+      1</string></value></member><member><name>target_milestone</name><value><string>---</string></value></member><member><name>product</name><value><string>LJL
+      Test Product</string></value></member></struct></value></member><member><name>is_open</name><value><boolean>0</boolean></value></member><member><name>assigned_to</name><value><string>tests.lisa@gmail.com</string></value></member><member><name>resolution</name><value><string>INVALID</string></value></member><member><name>product</name><value><string>LJL
+      Test Product</string></value></member><member><name>creation_time</name><value><dateTime.iso8601>20130331T05:19:00</dateTime.iso8601></value></member><member><name>id</name><value><int>21830</int></value></member><member><name>alias</name><value><string
+      /></value></member><member><name>severity</name><value><string>normal</string></value></member></struct></value><value><struct><member><name>priority</name><value><string>P3</string></value></member><member><name>status</name><value><string>CLOSED</string></value></member><member><name>last_change_time</name><value><dateTime.iso8601>20130405T03:36:52</dateTime.iso8601></value></member><member><name>component</name><value><string>Component
+      2</string></value></member><member><name>summary</name><value><string>Gmail
+      Login</string></value></member><member><name>internals</name><value><struct><member><name>priority</name><value><string>P3</string></value></member><member><name>bug_id</name><value><int>21834</int></value></member><member><name>cclist_accessible</name><value><int>1</int></value></member><member><name>cf_drop_down</name><value><string>Option
+      1</string></value></member><member><name>assigned_to</name><value><int>36544</int></value></member><member><name>everconfirmed</name><value><int>1</int></value></member><member><name>short_desc</name><value><string>Gmail
+      Login</string></value></member><member><name>bug_severity</name><value><string>major</string></value></member><member><name>estimated_time</name><value><double>10.00</double></value></member><member><name>reporter_id</name><value><int>41516</int></value></member><member><name>remaining_time</name><value><double>0.00</double></value></member><member><name>cf_large_text</name><value><string
+      /></value></member><member><name>reporter_accessible</name><value><int>1</int></value></member><member><name>resolution</name><value><string>WORKSFORME</string></value></member><member><name>cf_free_text</name><value><string
+      /></value></member><member><name>op_sys</name><value><string>Windows NT</string></value></member><member><name>status</name><value><struct><member><name>sortkey</name><value><int>700</int></value></member><member><name>value</name><value><string>CLOSED</string></value></member><member><name>is_open</name><value><int>0</int></value></member><member><name>isactive</name><value><int>1</int></value></member><member><name>id</name><value><int>7</int></value></member></struct></value></member><member><name>_multi_selects</name><value><array><data><value><struct><member><name>mailhead</name><value><int>1</int></value></member><member><name>sortkey</name><value><int>551</int></value></member><member><name>name</name><value><string>cf_mulitple_select</string></value></member><member><name>custom</name><value><int>1</int></value></member><member><name>description</name><value><string>A
+      multiple-select box</string></value></member><member><name>obsolete</name><value><int>0</int></value></member><member><name>buglist</name><value><int>0</int></value></member><member><name>enter_bug</name><value><int>1</int></value></member><member><name>type</name><value><int>3</int></value></member><member><name>id</name><value><int>61</int></value></member></struct></value></data></array></value></member><member><name>bug_file_loc</name><value><string
+      /></value></member><member><name>product_id</name><value><int>20</int></value></member><member><name>rep_platform</name><value><string>PC</string></value></member><member><name>creation_ts</name><value><string>2013.04.04
+      20:35</string></value></member><member><name>status_whiteboard</name><value><string
+      /></value></member><member><name>bug_status</name><value><string>CLOSED</string></value></member><member><name>delta_ts</name><value><string>2013-04-04
+      20:36:52</string></value></member><member><name>cf_date</name><value><string>2013-04-05
+      00:00:00</string></value></member><member><name>version</name><value><double>1.0</double></value></member><member><name>deadline</name><value><string>2013-04-10</string></value></member><member><name>component_id</name><value><int>29</int></value></member><member><name>component</name><value><string>Component
+      2</string></value></member><member><name>target_milestone</name><value><string>---</string></value></member><member><name>product</name><value><string>LJL
+      Test Product</string></value></member></struct></value></member><member><name>is_open</name><value><boolean>0</boolean></value></member><member><name>assigned_to</name><value><string>tests.lisa@gmail.com</string></value></member><member><name>resolution</name><value><string>WORKSFORME</string></value></member><member><name>product</name><value><string>LJL
+      Test Product</string></value></member><member><name>creation_time</name><value><dateTime.iso8601>20130405T03:35:00</dateTime.iso8601></value></member><member><name>id</name><value><int>21834</int></value></member><member><name>alias</name><value><string
+      /></value></member><member><name>severity</name><value><string>major</string></value></member></struct></value><value><struct><member><name>priority</name><value><string>P3</string></value></member><member><name>status</name><value><string>NEW</string></value></member><member><name>last_change_time</name><value><dateTime.iso8601>20130409T15:48:18</dateTime.iso8601></value></member><member><name>component</name><value><string>Component
+      1</string></value></member><member><name>summary</name><value><string>cvcxc</string></value></member><member><name>internals</name><value><struct><member><name>priority</name><value><string>P3</string></value></member><member><name>bug_id</name><value><int>21839</int></value></member><member><name>cclist_accessible</name><value><int>1</int></value></member><member><name>cf_drop_down</name><value><string>---</string></value></member><member><name>assigned_to</name><value><int>41520</int></value></member><member><name>everconfirmed</name><value><int>1</int></value></member><member><name>short_desc</name><value><string>cvcxc</string></value></member><member><name>bug_severity</name><value><string>normal</string></value></member><member><name>estimated_time</name><value><double>23.00</double></value></member><member><name>reporter_id</name><value><int>41520</int></value></member><member><name>remaining_time</name><value><double>23.00</double></value></member><member><name>cf_large_text</name><value><string
+      /></value></member><member><name>reporter_accessible</name><value><int>1</int></value></member><member><name>resolution</name><value><string
+      /></value></member><member><name>cf_free_text</name><value><string /></value></member><member><name>alias</name><value><string>dfdfd</string></value></member><member><name>op_sys</name><value><string>Windows
+      NT</string></value></member><member><name>status</name><value><struct><member><name>sortkey</name><value><int>200</int></value></member><member><name>value</name><value><string>NEW</string></value></member><member><name>is_open</name><value><int>1</int></value></member><member><name>isactive</name><value><int>1</int></value></member><member><name>id</name><value><int>2</int></value></member></struct></value></member><member><name>bug_file_loc</name><value><string>http://yahoo.com</string></value></member><member><name>product_id</name><value><int>20</int></value></member><member><name>rep_platform</name><value><string>PC</string></value></member><member><name>creation_ts</name><value><string>2013.04.09
+      08:18</string></value></member><member><name>status_whiteboard</name><value><string
+      /></value></member><member><name>bug_status</name><value><string>NEW</string></value></member><member><name>delta_ts</name><value><string>2013-04-09
+      08:48:18</string></value></member><member><name>cf_date</name><value><string>2013-04-09
+      00:00:00</string></value></member><member><name>version</name><value><double>1.0</double></value></member><member><name>deadline</name><value><string>2013-09-13</string></value></member><member><name>component_id</name><value><int>28</int></value></member><member><name>component</name><value><string>Component
+      1</string></value></member><member><name>target_milestone</name><value><string>---</string></value></member><member><name>product</name><value><string>LJL
+      Test Product</string></value></member></struct></value></member><member><name>is_open</name><value><boolean>1</boolean></value></member><member><name>assigned_to</name><value><string>harshimarai@yahoo.com</string></value></member><member><name>resolution</name><value><string
+      /></value></member><member><name>product</name><value><string>LJL Test Product</string></value></member><member><name>creation_time</name><value><dateTime.iso8601>20130409T15:18:00</dateTime.iso8601></value></member><member><name>id</name><value><int>21839</int></value></member><member><name>alias</name><value><string>dfdfd</string></value></member><member><name>severity</name><value><string>normal</string></value></member></struct></value></data></array></value></member></struct></value></param></params></methodResponse>
     http_version: '1.1'
 - !ruby/struct:VCR::HTTPInteraction
   request: !ruby/struct:VCR::Request
@@ -113,38 +155,38 @@
       connection:
       - keep-alive
       cookie:
-      - Bugzilla_login=40167; Bugzilla_logincookie=0PvluuPfz1
+      - Bugzilla_login=40167; Bugzilla_logincookie=P5OUXWhMEA
   response: !ruby/struct:VCR::Response
     status: !ruby/struct:VCR::ResponseStatus
       code: 200
       message: OK
     headers:
       date:
-      - Mon, 14 May 2012 21:36:11 GMT
+      - Tue, 16 Apr 2013 14:52:18 GMT
       server:
       - Apache/2.2.3 (CentOS)
       soapserver:
       - SOAP::Lite/Perl/0.712
       content-length:
-      - '4797'
+      - '4112'
+      keep-alive:
+      - timeout=15, max=100
       content-type:
       - text/xml
     body: <?xml version="1.0" encoding="UTF-8"?><methodResponse><params><param><value><struct><member><name>faults</name><value><array><data
-      /></array></value></member><member><name>bugs</name><value><array><data><value><struct><member><name>priority</name><value><string>P3</string></value></member><member><name>status</name><value><string>RESOLVED</string></value></member><member><name>last_change_time</name><value><dateTime.iso8601>20120418T14:55:28</dateTime.iso8601></value></member><member><name>component</name><value><string>Component
-      1</string></value></member><member><name>summary</name><value><string>this is
-      a test bug</string></value></member><member><name>internals</name><value><struct><member><name>priority</name><value><string>P3</string></value></member><member><name>bug_id</name><value><int>11912</int></value></member><member><name>cclist_accessible</name><value><int>1</int></value></member><member><name>cf_drop_down</name><value><string>---</string></value></member><member><name>assigned_to</name><value><int>36544</int></value></member><member><name>short_desc</name><value><string>this
-      is a test bug</string></value></member><member><name>everconfirmed</name><value><int>1</int></value></member><member><name>bug_severity</name><value><string>normal</string></value></member><member><name>reporter_id</name><value><int>40837</int></value></member><member><name>estimated_time</name><value><double>0.00</double></value></member><member><name>remaining_time</name><value><double>0.00</double></value></member><member><name>cf_large_text</name><value><string
-      /></value></member><member><name>cf_free_text</name><value><string /></value></member><member><name>resolution</name><value><string>FIXED</string></value></member><member><name>reporter_accessible</name><value><int>1</int></value></member><member><name>op_sys</name><value><string>Mac
-      OS X 10.0</string></value></member><member><name>status</name><value><struct><member><name>sortkey</name><value><int>500</int></value></member><member><name>value</name><value><string>RESOLVED</string></value></member><member><name>is_open</name><value><int>0</int></value></member><member><name>isactive</name><value><int>1</int></value></member><member><name>id</name><value><int>5</int></value></member></struct></value></member><member><name>_multi_selects</name><value><array><data><value><struct><member><name>mailhead</name><value><int>1</int></value></member><member><name>sortkey</name><value><int>551</int></value></member><member><name>custom</name><value><int>1</int></value></member><member><name>name</name><value><string>cf_mulitple_select</string></value></member><member><name>description</name><value><string>A
-      multiple-select box</string></value></member><member><name>buglist</name><value><int>0</int></value></member><member><name>obsolete</name><value><int>0</int></value></member><member><name>enter_bug</name><value><int>1</int></value></member><member><name>id</name><value><int>61</int></value></member><member><name>type</name><value><int>3</int></value></member></struct></value></data></array></value></member><member><name>bug_file_loc</name><value><string
-      /></value></member><member><name>product_id</name><value><int>20</int></value></member><member><name>rep_platform</name><value><string>PC</string></value></member><member><name>creation_ts</name><value><string>2012.04.18
-      07:53</string></value></member><member><name>status_whiteboard</name><value><string
-      /></value></member><member><name>bug_status</name><value><string>RESOLVED</string></value></member><member><name>delta_ts</name><value><string>2012-04-18
-      07:55:28</string></value></member><member><name>version</name><value><double>1.0</double></value></member><member><name>component_id</name><value><int>28</int></value></member><member><name>component</name><value><string>Component
+      /></array></value></member><member><name>bugs</name><value><array><data><value><struct><member><name>priority</name><value><string>P3</string></value></member><member><name>status</name><value><string>NEW</string></value></member><member><name>last_change_time</name><value><dateTime.iso8601>20130321T11:02:48</dateTime.iso8601></value></member><member><name>component</name><value><string>Component
+      1</string></value></member><member><name>summary</name><value><string>test case</string></value></member><member><name>internals</name><value><struct><member><name>priority</name><value><string>P3</string></value></member><member><name>bug_id</name><value><int>21812</int></value></member><member><name>cclist_accessible</name><value><int>1</int></value></member><member><name>cf_drop_down</name><value><string>---</string></value></member><member><name>assigned_to</name><value><int>41499</int></value></member><member><name>short_desc</name><value><string>test
+      case</string></value></member><member><name>everconfirmed</name><value><int>1</int></value></member><member><name>bug_severity</name><value><string>normal</string></value></member><member><name>reporter_id</name><value><int>41500</int></value></member><member><name>estimated_time</name><value><double>12.00</double></value></member><member><name>remaining_time</name><value><double>12.00</double></value></member><member><name>cf_large_text</name><value><string
+      /></value></member><member><name>cf_free_text</name><value><string /></value></member><member><name>resolution</name><value><string
+      /></value></member><member><name>reporter_accessible</name><value><int>1</int></value></member><member><name>alias</name><value><string>sumanta1</string></value></member><member><name>op_sys</name><value><string>Windows
+      XP</string></value></member><member><name>status</name><value><struct><member><name>sortkey</name><value><int>200</int></value></member><member><name>value</name><value><string>NEW</string></value></member><member><name>is_open</name><value><int>1</int></value></member><member><name>isactive</name><value><int>1</int></value></member><member><name>id</name><value><int>2</int></value></member></struct></value></member><member><name>bug_file_loc</name><value><string
+      /></value></member><member><name>product_id</name><value><int>20</int></value></member><member><name>rep_platform</name><value><string>PC</string></value></member><member><name>creation_ts</name><value><string>2013.03.21
+      04:02</string></value></member><member><name>status_whiteboard</name><value><string
+      /></value></member><member><name>bug_status</name><value><string>NEW</string></value></member><member><name>delta_ts</name><value><string>2013-03-21
+      04:02:48</string></value></member><member><name>version</name><value><double>1.0</double></value></member><member><name>deadline</name><value><string>2013-04-14</string></value></member><member><name>component_id</name><value><int>28</int></value></member><member><name>component</name><value><string>Component
       1</string></value></member><member><name>target_milestone</name><value><string>---</string></value></member><member><name>product</name><value><string>LJL
-      Test Product</string></value></member></struct></value></member><member><name>is_open</name><value><boolean>0</boolean></value></member><member><name>assigned_to</name><value><string>tests.lisa@gmail.com</string></value></member><member><name>resolution</name><value><string>FIXED</string></value></member><member><name>product</name><value><string>LJL
-      Test Product</string></value></member><member><name>creation_time</name><value><dateTime.iso8601>20120418T14:53:00</dateTime.iso8601></value></member><member><name>id</name><value><int>11912</int></value></member><member><name>alias</name><value><string
-      /></value></member><member><name>severity</name><value><string>normal</string></value></member></struct></value></data></array></value></member></struct></value></param></params></methodResponse>
+      Test Product</string></value></member></struct></value></member><member><name>is_open</name><value><boolean>1</boolean></value></member><member><name>assigned_to</name><value><string>lucky.subash.pradhan@gmail.com</string></value></member><member><name>resolution</name><value><string
+      /></value></member><member><name>product</name><value><string>LJL Test Product</string></value></member><member><name>creation_time</name><value><dateTime.iso8601>20130321T11:02:00</dateTime.iso8601></value></member><member><name>id</name><value><int>21812</int></value></member><member><name>alias</name><value><string>sumanta1</string></value></member><member><name>severity</name><value><string>normal</string></value></member></struct></value></data></array></value></member></struct></value></param></params></methodResponse>
     http_version: '1.1'
 - !ruby/struct:VCR::HTTPInteraction
   request: !ruby/struct:VCR::Request
@@ -161,24 +203,26 @@
       connection:
       - keep-alive
       cookie:
-      - Bugzilla_login=40167; Bugzilla_logincookie=0PvluuPfz1
+      - Bugzilla_login=40167; Bugzilla_logincookie=P5OUXWhMEA
   response: !ruby/struct:VCR::Response
     status: !ruby/struct:VCR::ResponseStatus
       code: 200
       message: OK
     headers:
       date:
-      - Mon, 14 May 2012 21:36:13 GMT
+      - Tue, 16 Apr 2013 14:52:21 GMT
       server:
       - Apache/2.2.3 (CentOS)
       soapserver:
       - SOAP::Lite/Perl/0.712
       content-length:
       - '1307'
+      keep-alive:
+      - timeout=15, max=100
       content-type:
       - text/xml
-    body: <?xml version="1.0" encoding="UTF-8"?><methodResponse><params><param><value><struct><member><name>products</name><value><array><data><value><struct><member><name>internals</name><value><struct><member><name>defaultmilestone</name><value><string>---</string></value></member><member><name>allows_unconfirmed</name><value><int>0</int></value></member><member><name>votesperuser</name><value><int>0</int></value></member><member><name>name</name><value><string>LJL
-      Test Product</string></value></member><member><name>maxvotesperbug</name><value><int>10000</int></value></member><member><name>classification_id</name><value><int>1</int></value></member><member><name>description</name><value><string>Test
+    body: <?xml version="1.0" encoding="UTF-8"?><methodResponse><params><param><value><struct><member><name>products</name><value><array><data><value><struct><member><name>internals</name><value><struct><member><name>defaultmilestone</name><value><string>---</string></value></member><member><name>votesperuser</name><value><int>0</int></value></member><member><name>allows_unconfirmed</name><value><int>0</int></value></member><member><name>name</name><value><string>LJL
+      Test Product</string></value></member><member><name>classification_id</name><value><int>1</int></value></member><member><name>maxvotesperbug</name><value><int>10000</int></value></member><member><name>description</name><value><string>Test
       product description</string></value></member><member><name>votestoconfirm</name><value><int>0</int></value></member><member><name>isactive</name><value><int>1</int></value></member><member><name>id</name><value><int>20</int></value></member></struct></value></member><member><name>name</name><value><string>LJL
       Test Product</string></value></member><member><name>id</name><value><int>20</int></value></member><member><name>description</name><value><string>Test
       product description</string></value></member></struct></value></data></array></value></member></struct></value></param></params></methodResponse>
@@ -198,38 +242,39 @@
       connection:
       - keep-alive
       cookie:
-      - Bugzilla_login=40167; Bugzilla_logincookie=0PvluuPfz1
+      - Bugzilla_login=40167; Bugzilla_logincookie=P5OUXWhMEA
   response: !ruby/struct:VCR::Response
     status: !ruby/struct:VCR::ResponseStatus
       code: 200
       message: OK
     headers:
       date:
-      - Mon, 14 May 2012 21:36:14 GMT
+      - Tue, 16 Apr 2013 14:52:24 GMT
       server:
       - Apache/2.2.3 (CentOS)
       soapserver:
       - SOAP::Lite/Perl/0.712
       content-length:
-      - '4762'
+      - '4735'
+      keep-alive:
+      - timeout=15, max=100
       content-type:
       - text/xml
     body: <?xml version="1.0" encoding="UTF-8"?><methodResponse><params><param><value><struct><member><name>faults</name><value><array><data
-      /></array></value></member><member><name>bugs</name><value><array><data><value><struct><member><name>priority</name><value><string>P3</string></value></member><member><name>status</name><value><string>ASSIGNED</string></value></member><member><name>last_change_time</name><value><dateTime.iso8601>20120502T07:03:52</dateTime.iso8601></value></member><member><name>component</name><value><string>Component
-      1</string></value></member><member><name>summary</name><value><string>This a
-      new bug</string></value></member><member><name>internals</name><value><struct><member><name>priority</name><value><string>P3</string></value></member><member><name>bug_id</name><value><int>11929</int></value></member><member><name>cclist_accessible</name><value><int>1</int></value></member><member><name>cf_drop_down</name><value><string>---</string></value></member><member><name>assigned_to</name><value><int>36544</int></value></member><member><name>short_desc</name><value><string>This
-      a new bug</string></value></member><member><name>everconfirmed</name><value><int>1</int></value></member><member><name>bug_severity</name><value><string>normal</string></value></member><member><name>reporter_id</name><value><int>40856</int></value></member><member><name>estimated_time</name><value><double>0.00</double></value></member><member><name>remaining_time</name><value><double>0.00</double></value></member><member><name>cf_large_text</name><value><string
+      /></array></value></member><member><name>bugs</name><value><array><data><value><struct><member><name>priority</name><value><string>P3</string></value></member><member><name>status</name><value><string>NEW</string></value></member><member><name>last_change_time</name><value><dateTime.iso8601>20130329T08:16:28</dateTime.iso8601></value></member><member><name>component</name><value><string>Component
+      1</string></value></member><member><name>summary</name><value><string>Test bug</string></value></member><member><name>internals</name><value><struct><member><name>priority</name><value><string>P3</string></value></member><member><name>bug_id</name><value><int>21828</int></value></member><member><name>cclist_accessible</name><value><int>1</int></value></member><member><name>cf_drop_down</name><value><string>---</string></value></member><member><name>assigned_to</name><value><int>36544</int></value></member><member><name>short_desc</name><value><string>Test
+      bug</string></value></member><member><name>everconfirmed</name><value><int>1</int></value></member><member><name>bug_severity</name><value><string>normal</string></value></member><member><name>reporter_id</name><value><int>41264</int></value></member><member><name>estimated_time</name><value><double>0.00</double></value></member><member><name>remaining_time</name><value><double>0.00</double></value></member><member><name>cf_large_text</name><value><string
       /></value></member><member><name>cf_free_text</name><value><string /></value></member><member><name>resolution</name><value><string
       /></value></member><member><name>reporter_accessible</name><value><int>1</int></value></member><member><name>op_sys</name><value><string>Windows
-      NT</string></value></member><member><name>status</name><value><struct><member><name>sortkey</name><value><int>300</int></value></member><member><name>value</name><value><string>ASSIGNED</string></value></member><member><name>is_open</name><value><int>1</int></value></member><member><name>isactive</name><value><int>1</int></value></member><member><name>id</name><value><int>3</int></value></member></struct></value></member><member><name>_multi_selects</name><value><array><data><value><struct><member><name>mailhead</name><value><int>1</int></value></member><member><name>sortkey</name><value><int>551</int></value></member><member><name>custom</name><value><int>1</int></value></member><member><name>name</name><value><string>cf_mulitple_select</string></value></member><member><name>description</name><value><string>A
-      multiple-select box</string></value></member><member><name>buglist</name><value><int>0</int></value></member><member><name>obsolete</name><value><int>0</int></value></member><member><name>enter_bug</name><value><int>1</int></value></member><member><name>id</name><value><int>61</int></value></member><member><name>type</name><value><int>3</int></value></member></struct></value></data></array></value></member><member><name>bug_file_loc</name><value><string
-      /></value></member><member><name>product_id</name><value><int>20</int></value></member><member><name>rep_platform</name><value><string>PC</string></value></member><member><name>creation_ts</name><value><string>2012.05.02
-      00:02</string></value></member><member><name>status_whiteboard</name><value><string
-      /></value></member><member><name>bug_status</name><value><string>ASSIGNED</string></value></member><member><name>delta_ts</name><value><string>2012-05-02
-      00:03:52</string></value></member><member><name>version</name><value><double>1.0</double></value></member><member><name>component_id</name><value><int>28</int></value></member><member><name>component</name><value><string>Component
+      XP</string></value></member><member><name>status</name><value><struct><member><name>sortkey</name><value><int>200</int></value></member><member><name>value</name><value><string>NEW</string></value></member><member><name>is_open</name><value><int>1</int></value></member><member><name>isactive</name><value><int>1</int></value></member><member><name>id</name><value><int>2</int></value></member></struct></value></member><member><name>_multi_selects</name><value><array><data><value><struct><member><name>mailhead</name><value><int>1</int></value></member><member><name>sortkey</name><value><int>551</int></value></member><member><name>name</name><value><string>cf_mulitple_select</string></value></member><member><name>custom</name><value><int>1</int></value></member><member><name>description</name><value><string>A
+      multiple-select box</string></value></member><member><name>obsolete</name><value><int>0</int></value></member><member><name>buglist</name><value><int>0</int></value></member><member><name>enter_bug</name><value><int>1</int></value></member><member><name>id</name><value><int>61</int></value></member><member><name>type</name><value><int>3</int></value></member></struct></value></data></array></value></member><member><name>bug_file_loc</name><value><string
+      /></value></member><member><name>product_id</name><value><int>20</int></value></member><member><name>rep_platform</name><value><string>PC</string></value></member><member><name>creation_ts</name><value><string>2013.03.29
+      01:16</string></value></member><member><name>status_whiteboard</name><value><string
+      /></value></member><member><name>bug_status</name><value><string>NEW</string></value></member><member><name>delta_ts</name><value><string>2013-03-29
+      01:16:28</string></value></member><member><name>version</name><value><double>1.0</double></value></member><member><name>component_id</name><value><int>28</int></value></member><member><name>component</name><value><string>Component
       1</string></value></member><member><name>target_milestone</name><value><string>---</string></value></member><member><name>product</name><value><string>LJL
       Test Product</string></value></member></struct></value></member><member><name>is_open</name><value><boolean>1</boolean></value></member><member><name>assigned_to</name><value><string>tests.lisa@gmail.com</string></value></member><member><name>resolution</name><value><string
-      /></value></member><member><name>product</name><value><string>LJL Test Product</string></value></member><member><name>creation_time</name><value><dateTime.iso8601>20120502T07:02:00</dateTime.iso8601></value></member><member><name>id</name><value><int>11929</int></value></member><member><name>alias</name><value><string
+      /></value></member><member><name>product</name><value><string>LJL Test Product</string></value></member><member><name>creation_time</name><value><dateTime.iso8601>20130329T08:16:00</dateTime.iso8601></value></member><member><name>id</name><value><int>21828</int></value></member><member><name>alias</name><value><string
       /></value></member><member><name>severity</name><value><string>normal</string></value></member></struct></value></data></array></value></member></struct></value></param></params></methodResponse>
     http_version: '1.1'
 - !ruby/struct:VCR::HTTPInteraction
@@ -247,24 +292,292 @@
       connection:
       - keep-alive
       cookie:
-      - Bugzilla_login=40167; Bugzilla_logincookie=0PvluuPfz1
+      - Bugzilla_login=40167; Bugzilla_logincookie=P5OUXWhMEA
   response: !ruby/struct:VCR::Response
     status: !ruby/struct:VCR::ResponseStatus
       code: 200
       message: OK
     headers:
       date:
-      - Mon, 14 May 2012 21:36:15 GMT
+      - Tue, 16 Apr 2013 14:52:30 GMT
       server:
       - Apache/2.2.3 (CentOS)
       soapserver:
       - SOAP::Lite/Perl/0.712
       content-length:
       - '1307'
+      keep-alive:
+      - timeout=15, max=100
       content-type:
       - text/xml
-    body: <?xml version="1.0" encoding="UTF-8"?><methodResponse><params><param><value><struct><member><name>products</name><value><array><data><value><struct><member><name>internals</name><value><struct><member><name>defaultmilestone</name><value><string>---</string></value></member><member><name>allows_unconfirmed</name><value><int>0</int></value></member><member><name>votesperuser</name><value><int>0</int></value></member><member><name>name</name><value><string>LJL
-      Test Product</string></value></member><member><name>maxvotesperbug</name><value><int>10000</int></value></member><member><name>classification_id</name><value><int>1</int></value></member><member><name>description</name><value><string>Test
+    body: <?xml version="1.0" encoding="UTF-8"?><methodResponse><params><param><value><struct><member><name>products</name><value><array><data><value><struct><member><name>internals</name><value><struct><member><name>defaultmilestone</name><value><string>---</string></value></member><member><name>votesperuser</name><value><int>0</int></value></member><member><name>allows_unconfirmed</name><value><int>0</int></value></member><member><name>name</name><value><string>LJL
+      Test Product</string></value></member><member><name>classification_id</name><value><int>1</int></value></member><member><name>maxvotesperbug</name><value><int>10000</int></value></member><member><name>description</name><value><string>Test
+      product description</string></value></member><member><name>votestoconfirm</name><value><int>0</int></value></member><member><name>isactive</name><value><int>1</int></value></member><member><name>id</name><value><int>20</int></value></member></struct></value></member><member><name>name</name><value><string>LJL
+      Test Product</string></value></member><member><name>id</name><value><int>20</int></value></member><member><name>description</name><value><string>Test
+      product description</string></value></member></struct></value></data></array></value></member></struct></value></param></params></methodResponse>
+    http_version: '1.1'
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :post
+    uri: https://landfill.bugzilla.org:443/bugzilla-3.6-branch/xmlrpc.cgi
+    body: !!null 
+    headers:
+      user-agent:
+      - XMLRPC::Client (Ruby 1.9.2)
+      content-type:
+      - text/xml; charset=utf-8
+      content-length:
+      - '254'
+      connection:
+      - keep-alive
+      cookie:
+      - Bugzilla_login=40167; Bugzilla_logincookie=P5OUXWhMEA
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Tue, 16 Apr 2013 14:52:33 GMT
+      server:
+      - Apache/2.2.3 (CentOS)
+      soapserver:
+      - SOAP::Lite/Perl/0.712
+      content-length:
+      - '4798'
+      keep-alive:
+      - timeout=15, max=100
+      content-type:
+      - text/xml
+    body: <?xml version="1.0" encoding="UTF-8"?><methodResponse><params><param><value><struct><member><name>faults</name><value><array><data
+      /></array></value></member><member><name>bugs</name><value><array><data><value><struct><member><name>priority</name><value><string>P3</string></value></member><member><name>status</name><value><string>RESOLVED</string></value></member><member><name>last_change_time</name><value><dateTime.iso8601>20130331T05:49:24</dateTime.iso8601></value></member><member><name>component</name><value><string>Component
+      1</string></value></member><member><name>summary</name><value><string>lable
+      was disabled</string></value></member><member><name>internals</name><value><struct><member><name>priority</name><value><string>P3</string></value></member><member><name>bug_id</name><value><int>21830</int></value></member><member><name>cclist_accessible</name><value><int>1</int></value></member><member><name>cf_drop_down</name><value><string>---</string></value></member><member><name>assigned_to</name><value><int>36544</int></value></member><member><name>short_desc</name><value><string>lable
+      was disabled</string></value></member><member><name>everconfirmed</name><value><int>1</int></value></member><member><name>bug_severity</name><value><string>normal</string></value></member><member><name>reporter_id</name><value><int>41513</int></value></member><member><name>estimated_time</name><value><double>0.00</double></value></member><member><name>remaining_time</name><value><double>0.00</double></value></member><member><name>cf_large_text</name><value><string
+      /></value></member><member><name>cf_free_text</name><value><string /></value></member><member><name>resolution</name><value><string>INVALID</string></value></member><member><name>reporter_accessible</name><value><int>1</int></value></member><member><name>op_sys</name><value><string>Windows
+      NT</string></value></member><member><name>status</name><value><struct><member><name>sortkey</name><value><int>500</int></value></member><member><name>value</name><value><string>RESOLVED</string></value></member><member><name>is_open</name><value><int>0</int></value></member><member><name>isactive</name><value><int>1</int></value></member><member><name>id</name><value><int>5</int></value></member></struct></value></member><member><name>_multi_selects</name><value><array><data><value><struct><member><name>mailhead</name><value><int>1</int></value></member><member><name>sortkey</name><value><int>551</int></value></member><member><name>name</name><value><string>cf_mulitple_select</string></value></member><member><name>custom</name><value><int>1</int></value></member><member><name>description</name><value><string>A
+      multiple-select box</string></value></member><member><name>obsolete</name><value><int>0</int></value></member><member><name>buglist</name><value><int>0</int></value></member><member><name>enter_bug</name><value><int>1</int></value></member><member><name>id</name><value><int>61</int></value></member><member><name>type</name><value><int>3</int></value></member></struct></value></data></array></value></member><member><name>bug_file_loc</name><value><string
+      /></value></member><member><name>product_id</name><value><int>20</int></value></member><member><name>rep_platform</name><value><string>PC</string></value></member><member><name>creation_ts</name><value><string>2013.03.30
+      22:19</string></value></member><member><name>status_whiteboard</name><value><string
+      /></value></member><member><name>bug_status</name><value><string>RESOLVED</string></value></member><member><name>delta_ts</name><value><string>2013-03-30
+      22:49:24</string></value></member><member><name>version</name><value><double>1.0</double></value></member><member><name>component_id</name><value><int>28</int></value></member><member><name>component</name><value><string>Component
+      1</string></value></member><member><name>target_milestone</name><value><string>---</string></value></member><member><name>product</name><value><string>LJL
+      Test Product</string></value></member></struct></value></member><member><name>is_open</name><value><boolean>0</boolean></value></member><member><name>assigned_to</name><value><string>tests.lisa@gmail.com</string></value></member><member><name>resolution</name><value><string>INVALID</string></value></member><member><name>product</name><value><string>LJL
+      Test Product</string></value></member><member><name>creation_time</name><value><dateTime.iso8601>20130331T05:19:00</dateTime.iso8601></value></member><member><name>id</name><value><int>21830</int></value></member><member><name>alias</name><value><string
+      /></value></member><member><name>severity</name><value><string>normal</string></value></member></struct></value></data></array></value></member></struct></value></param></params></methodResponse>
+    http_version: '1.1'
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :post
+    uri: https://landfill.bugzilla.org:443/bugzilla-3.6-branch/xmlrpc.cgi
+    body: !!null 
+    headers:
+      user-agent:
+      - XMLRPC::Client (Ruby 1.9.2)
+      content-type:
+      - text/xml; charset=utf-8
+      content-length:
+      - '259'
+      connection:
+      - keep-alive
+      cookie:
+      - Bugzilla_login=40167; Bugzilla_logincookie=P5OUXWhMEA
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Tue, 16 Apr 2013 14:52:39 GMT
+      server:
+      - Apache/2.2.3 (CentOS)
+      soapserver:
+      - SOAP::Lite/Perl/0.712
+      content-length:
+      - '1307'
+      keep-alive:
+      - timeout=15, max=100
+      content-type:
+      - text/xml
+    body: <?xml version="1.0" encoding="UTF-8"?><methodResponse><params><param><value><struct><member><name>products</name><value><array><data><value><struct><member><name>internals</name><value><struct><member><name>defaultmilestone</name><value><string>---</string></value></member><member><name>votesperuser</name><value><int>0</int></value></member><member><name>allows_unconfirmed</name><value><int>0</int></value></member><member><name>name</name><value><string>LJL
+      Test Product</string></value></member><member><name>classification_id</name><value><int>1</int></value></member><member><name>maxvotesperbug</name><value><int>10000</int></value></member><member><name>description</name><value><string>Test
+      product description</string></value></member><member><name>votestoconfirm</name><value><int>0</int></value></member><member><name>isactive</name><value><int>1</int></value></member><member><name>id</name><value><int>20</int></value></member></struct></value></member><member><name>name</name><value><string>LJL
+      Test Product</string></value></member><member><name>id</name><value><int>20</int></value></member><member><name>description</name><value><string>Test
+      product description</string></value></member></struct></value></data></array></value></member></struct></value></param></params></methodResponse>
+    http_version: '1.1'
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :post
+    uri: https://landfill.bugzilla.org:443/bugzilla-3.6-branch/xmlrpc.cgi
+    body: !!null 
+    headers:
+      user-agent:
+      - XMLRPC::Client (Ruby 1.9.2)
+      content-type:
+      - text/xml; charset=utf-8
+      content-length:
+      - '254'
+      connection:
+      - keep-alive
+      cookie:
+      - Bugzilla_login=40167; Bugzilla_logincookie=P5OUXWhMEA
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Tue, 16 Apr 2013 14:52:41 GMT
+      server:
+      - Apache/2.2.3 (CentOS)
+      soapserver:
+      - SOAP::Lite/Perl/0.712
+      content-length:
+      - '4956'
+      keep-alive:
+      - timeout=15, max=100
+      content-type:
+      - text/xml
+    body: <?xml version="1.0" encoding="UTF-8"?><methodResponse><params><param><value><struct><member><name>faults</name><value><array><data
+      /></array></value></member><member><name>bugs</name><value><array><data><value><struct><member><name>priority</name><value><string>P3</string></value></member><member><name>status</name><value><string>CLOSED</string></value></member><member><name>last_change_time</name><value><dateTime.iso8601>20130405T03:36:52</dateTime.iso8601></value></member><member><name>component</name><value><string>Component
+      2</string></value></member><member><name>summary</name><value><string>Gmail
+      Login</string></value></member><member><name>internals</name><value><struct><member><name>priority</name><value><string>P3</string></value></member><member><name>bug_id</name><value><int>21834</int></value></member><member><name>cclist_accessible</name><value><int>1</int></value></member><member><name>cf_drop_down</name><value><string>Option
+      1</string></value></member><member><name>assigned_to</name><value><int>36544</int></value></member><member><name>short_desc</name><value><string>Gmail
+      Login</string></value></member><member><name>everconfirmed</name><value><int>1</int></value></member><member><name>bug_severity</name><value><string>major</string></value></member><member><name>reporter_id</name><value><int>41516</int></value></member><member><name>estimated_time</name><value><double>10.00</double></value></member><member><name>remaining_time</name><value><double>0.00</double></value></member><member><name>cf_large_text</name><value><string
+      /></value></member><member><name>cf_free_text</name><value><string /></value></member><member><name>resolution</name><value><string>WORKSFORME</string></value></member><member><name>reporter_accessible</name><value><int>1</int></value></member><member><name>op_sys</name><value><string>Windows
+      NT</string></value></member><member><name>status</name><value><struct><member><name>sortkey</name><value><int>700</int></value></member><member><name>value</name><value><string>CLOSED</string></value></member><member><name>is_open</name><value><int>0</int></value></member><member><name>isactive</name><value><int>1</int></value></member><member><name>id</name><value><int>7</int></value></member></struct></value></member><member><name>_multi_selects</name><value><array><data><value><struct><member><name>mailhead</name><value><int>1</int></value></member><member><name>sortkey</name><value><int>551</int></value></member><member><name>name</name><value><string>cf_mulitple_select</string></value></member><member><name>custom</name><value><int>1</int></value></member><member><name>description</name><value><string>A
+      multiple-select box</string></value></member><member><name>obsolete</name><value><int>0</int></value></member><member><name>buglist</name><value><int>0</int></value></member><member><name>enter_bug</name><value><int>1</int></value></member><member><name>id</name><value><int>61</int></value></member><member><name>type</name><value><int>3</int></value></member></struct></value></data></array></value></member><member><name>bug_file_loc</name><value><string
+      /></value></member><member><name>product_id</name><value><int>20</int></value></member><member><name>rep_platform</name><value><string>PC</string></value></member><member><name>creation_ts</name><value><string>2013.04.04
+      20:35</string></value></member><member><name>status_whiteboard</name><value><string
+      /></value></member><member><name>bug_status</name><value><string>CLOSED</string></value></member><member><name>delta_ts</name><value><string>2013-04-04
+      20:36:52</string></value></member><member><name>cf_date</name><value><string>2013-04-05
+      00:00:00</string></value></member><member><name>version</name><value><double>1.0</double></value></member><member><name>deadline</name><value><string>2013-04-10</string></value></member><member><name>component_id</name><value><int>29</int></value></member><member><name>component</name><value><string>Component
+      2</string></value></member><member><name>target_milestone</name><value><string>---</string></value></member><member><name>product</name><value><string>LJL
+      Test Product</string></value></member></struct></value></member><member><name>is_open</name><value><boolean>0</boolean></value></member><member><name>assigned_to</name><value><string>tests.lisa@gmail.com</string></value></member><member><name>resolution</name><value><string>WORKSFORME</string></value></member><member><name>product</name><value><string>LJL
+      Test Product</string></value></member><member><name>creation_time</name><value><dateTime.iso8601>20130405T03:35:00</dateTime.iso8601></value></member><member><name>id</name><value><int>21834</int></value></member><member><name>alias</name><value><string
+      /></value></member><member><name>severity</name><value><string>major</string></value></member></struct></value></data></array></value></member></struct></value></param></params></methodResponse>
+    http_version: '1.1'
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :post
+    uri: https://landfill.bugzilla.org:443/bugzilla-3.6-branch/xmlrpc.cgi
+    body: !!null 
+    headers:
+      user-agent:
+      - XMLRPC::Client (Ruby 1.9.2)
+      content-type:
+      - text/xml; charset=utf-8
+      content-length:
+      - '259'
+      connection:
+      - keep-alive
+      cookie:
+      - Bugzilla_login=40167; Bugzilla_logincookie=P5OUXWhMEA
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Tue, 16 Apr 2013 14:52:42 GMT
+      server:
+      - Apache/2.2.3 (CentOS)
+      soapserver:
+      - SOAP::Lite/Perl/0.712
+      content-length:
+      - '1307'
+      keep-alive:
+      - timeout=15, max=100
+      content-type:
+      - text/xml
+    body: <?xml version="1.0" encoding="UTF-8"?><methodResponse><params><param><value><struct><member><name>products</name><value><array><data><value><struct><member><name>internals</name><value><struct><member><name>defaultmilestone</name><value><string>---</string></value></member><member><name>votesperuser</name><value><int>0</int></value></member><member><name>allows_unconfirmed</name><value><int>0</int></value></member><member><name>name</name><value><string>LJL
+      Test Product</string></value></member><member><name>classification_id</name><value><int>1</int></value></member><member><name>maxvotesperbug</name><value><int>10000</int></value></member><member><name>description</name><value><string>Test
+      product description</string></value></member><member><name>votestoconfirm</name><value><int>0</int></value></member><member><name>isactive</name><value><int>1</int></value></member><member><name>id</name><value><int>20</int></value></member></struct></value></member><member><name>name</name><value><string>LJL
+      Test Product</string></value></member><member><name>id</name><value><int>20</int></value></member><member><name>description</name><value><string>Test
+      product description</string></value></member></struct></value></data></array></value></member></struct></value></param></params></methodResponse>
+    http_version: '1.1'
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :post
+    uri: https://landfill.bugzilla.org:443/bugzilla-3.6-branch/xmlrpc.cgi
+    body: !!null 
+    headers:
+      user-agent:
+      - XMLRPC::Client (Ruby 1.9.2)
+      content-type:
+      - text/xml; charset=utf-8
+      content-length:
+      - '254'
+      connection:
+      - keep-alive
+      cookie:
+      - Bugzilla_login=40167; Bugzilla_logincookie=P5OUXWhMEA
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Tue, 16 Apr 2013 14:52:43 GMT
+      server:
+      - Apache/2.2.3 (CentOS)
+      soapserver:
+      - SOAP::Lite/Perl/0.712
+      content-length:
+      - '4200'
+      keep-alive:
+      - timeout=15, max=100
+      content-type:
+      - text/xml
+    body: <?xml version="1.0" encoding="UTF-8"?><methodResponse><params><param><value><struct><member><name>faults</name><value><array><data
+      /></array></value></member><member><name>bugs</name><value><array><data><value><struct><member><name>priority</name><value><string>P3</string></value></member><member><name>status</name><value><string>NEW</string></value></member><member><name>last_change_time</name><value><dateTime.iso8601>20130409T15:48:18</dateTime.iso8601></value></member><member><name>component</name><value><string>Component
+      1</string></value></member><member><name>summary</name><value><string>cvcxc</string></value></member><member><name>internals</name><value><struct><member><name>priority</name><value><string>P3</string></value></member><member><name>bug_id</name><value><int>21839</int></value></member><member><name>cclist_accessible</name><value><int>1</int></value></member><member><name>cf_drop_down</name><value><string>---</string></value></member><member><name>assigned_to</name><value><int>41520</int></value></member><member><name>short_desc</name><value><string>cvcxc</string></value></member><member><name>everconfirmed</name><value><int>1</int></value></member><member><name>bug_severity</name><value><string>normal</string></value></member><member><name>reporter_id</name><value><int>41520</int></value></member><member><name>estimated_time</name><value><double>23.00</double></value></member><member><name>remaining_time</name><value><double>23.00</double></value></member><member><name>cf_large_text</name><value><string
+      /></value></member><member><name>cf_free_text</name><value><string /></value></member><member><name>resolution</name><value><string
+      /></value></member><member><name>reporter_accessible</name><value><int>1</int></value></member><member><name>alias</name><value><string>dfdfd</string></value></member><member><name>op_sys</name><value><string>Windows
+      NT</string></value></member><member><name>status</name><value><struct><member><name>sortkey</name><value><int>200</int></value></member><member><name>value</name><value><string>NEW</string></value></member><member><name>is_open</name><value><int>1</int></value></member><member><name>isactive</name><value><int>1</int></value></member><member><name>id</name><value><int>2</int></value></member></struct></value></member><member><name>bug_file_loc</name><value><string>http://yahoo.com</string></value></member><member><name>product_id</name><value><int>20</int></value></member><member><name>rep_platform</name><value><string>PC</string></value></member><member><name>creation_ts</name><value><string>2013.04.09
+      08:18</string></value></member><member><name>status_whiteboard</name><value><string
+      /></value></member><member><name>bug_status</name><value><string>NEW</string></value></member><member><name>delta_ts</name><value><string>2013-04-09
+      08:48:18</string></value></member><member><name>cf_date</name><value><string>2013-04-09
+      00:00:00</string></value></member><member><name>version</name><value><double>1.0</double></value></member><member><name>deadline</name><value><string>2013-09-13</string></value></member><member><name>component_id</name><value><int>28</int></value></member><member><name>component</name><value><string>Component
+      1</string></value></member><member><name>target_milestone</name><value><string>---</string></value></member><member><name>product</name><value><string>LJL
+      Test Product</string></value></member></struct></value></member><member><name>is_open</name><value><boolean>1</boolean></value></member><member><name>assigned_to</name><value><string>harshimarai@yahoo.com</string></value></member><member><name>resolution</name><value><string
+      /></value></member><member><name>product</name><value><string>LJL Test Product</string></value></member><member><name>creation_time</name><value><dateTime.iso8601>20130409T15:18:00</dateTime.iso8601></value></member><member><name>id</name><value><int>21839</int></value></member><member><name>alias</name><value><string>dfdfd</string></value></member><member><name>severity</name><value><string>normal</string></value></member></struct></value></data></array></value></member></struct></value></param></params></methodResponse>
+    http_version: '1.1'
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :post
+    uri: https://landfill.bugzilla.org:443/bugzilla-3.6-branch/xmlrpc.cgi
+    body: !!null 
+    headers:
+      user-agent:
+      - XMLRPC::Client (Ruby 1.9.2)
+      content-type:
+      - text/xml; charset=utf-8
+      content-length:
+      - '259'
+      connection:
+      - keep-alive
+      cookie:
+      - Bugzilla_login=40167; Bugzilla_logincookie=P5OUXWhMEA
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Tue, 16 Apr 2013 14:52:44 GMT
+      server:
+      - Apache/2.2.3 (CentOS)
+      soapserver:
+      - SOAP::Lite/Perl/0.712
+      content-length:
+      - '1307'
+      keep-alive:
+      - timeout=15, max=100
+      content-type:
+      - text/xml
+    body: <?xml version="1.0" encoding="UTF-8"?><methodResponse><params><param><value><struct><member><name>products</name><value><array><data><value><struct><member><name>internals</name><value><struct><member><name>defaultmilestone</name><value><string>---</string></value></member><member><name>votesperuser</name><value><int>0</int></value></member><member><name>allows_unconfirmed</name><value><int>0</int></value></member><member><name>name</name><value><string>LJL
+      Test Product</string></value></member><member><name>classification_id</name><value><int>1</int></value></member><member><name>maxvotesperbug</name><value><int>10000</int></value></member><member><name>description</name><value><string>Test
       product description</string></value></member><member><name>votestoconfirm</name><value><int>0</int></value></member><member><name>isactive</name><value><int>1</int></value></member><member><name>id</name><value><int>20</int></value></member></struct></value></member><member><name>name</name><value><string>LJL
       Test Product</string></value></member><member><name>id</name><value><int>20</int></value></member><member><name>description</name><value><string>Test
       product description</string></value></member></struct></value></data></array></value></member></struct></value></param></params></methodResponse>

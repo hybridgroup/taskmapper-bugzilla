@@ -14,20 +14,22 @@
       connection:
       - keep-alive
       cookie:
-      - Bugzilla_login=40167; Bugzilla_logincookie=CJhhx44CpV
+      - Bugzilla_login=40167; Bugzilla_logincookie=qXAqeQSFi1
   response: !ruby/struct:VCR::Response
     status: !ruby/struct:VCR::ResponseStatus
       code: 200
       message: OK
     headers:
       date:
-      - Mon, 14 May 2012 21:37:25 GMT
+      - Tue, 16 Apr 2013 14:51:42 GMT
       server:
       - Apache/2.2.3 (CentOS)
       soapserver:
       - SOAP::Lite/Perl/0.712
       content-length:
       - '375'
+      keep-alive:
+      - timeout=15, max=100
       content-type:
       - text/xml
     body: <?xml version="1.0" encoding="UTF-8"?><methodResponse><params><param><value><struct><member><name>ids</name><value><array><data><value><int>1</int></value><value><int>4</int></value><value><int>3</int></value><value><int>19</int></value><value><int>2</int></value><value><int>20</int></value></data></array></value></member></struct></value></param></params></methodResponse>
@@ -47,23 +49,25 @@
       connection:
       - keep-alive
       cookie:
-      - Bugzilla_login=40167; Bugzilla_logincookie=CJhhx44CpV
+      - Bugzilla_login=40167; Bugzilla_logincookie=qXAqeQSFi1
   response: !ruby/struct:VCR::Response
     status: !ruby/struct:VCR::ResponseStatus
       code: 200
       message: OK
     headers:
       date:
-      - Mon, 14 May 2012 21:37:27 GMT
+      - Tue, 16 Apr 2013 14:51:43 GMT
       server:
       - Apache/2.2.3 (CentOS)
       soapserver:
       - SOAP::Lite/Perl/0.712
       content-length:
       - '1644'
+      keep-alive:
+      - timeout=15, max=100
       content-type:
       - text/xml
-    body: ! '<?xml version="1.0" encoding="UTF-8"?><methodResponse><params><param><value><struct><member><name>products</name><value><array><data><value><struct><member><name>internals</name><value><struct><member><name>defaultmilestone</name><value><string>---</string></value></member><member><name>allows_unconfirmed</name><value><int>0</int></value></member><member><name>votesperuser</name><value><int>1000</int></value></member><member><name>name</name><value><string>WorldControl</string></value></member><member><name>maxvotesperbug</name><value><int>1</int></value></member><member><name>classification_id</name><value><int>2</int></value></member><member><name>description</name><value><string>A
+    body: ! '<?xml version="1.0" encoding="UTF-8"?><methodResponse><params><param><value><struct><member><name>products</name><value><array><data><value><struct><member><name>internals</name><value><struct><member><name>defaultmilestone</name><value><string>---</string></value></member><member><name>votesperuser</name><value><int>1000</int></value></member><member><name>allows_unconfirmed</name><value><int>0</int></value></member><member><name>name</name><value><string>WorldControl</string></value></member><member><name>classification_id</name><value><int>2</int></value></member><member><name>maxvotesperbug</name><value><int>1</int></value></member><member><name>description</name><value><string>A
       small little program for controlling the world. Can be used&#xd;
 
       for good or for evil. Sub-components can be created using the WorldControl API
@@ -88,24 +92,26 @@
       connection:
       - keep-alive
       cookie:
-      - Bugzilla_login=40167; Bugzilla_logincookie=CJhhx44CpV
+      - Bugzilla_login=40167; Bugzilla_logincookie=qXAqeQSFi1
   response: !ruby/struct:VCR::Response
     status: !ruby/struct:VCR::ResponseStatus
       code: 200
       message: OK
     headers:
       date:
-      - Mon, 14 May 2012 21:37:28 GMT
+      - Tue, 16 Apr 2013 14:51:44 GMT
       server:
       - Apache/2.2.3 (CentOS)
       soapserver:
       - SOAP::Lite/Perl/0.712
       content-length:
       - '1301'
+      keep-alive:
+      - timeout=15, max=100
       content-type:
       - text/xml
-    body: <?xml version="1.0" encoding="UTF-8"?><methodResponse><params><param><value><struct><member><name>products</name><value><array><data><value><struct><member><name>internals</name><value><struct><member><name>defaultmilestone</name><value><string>---</string></value></member><member><name>allows_unconfirmed</name><value><int>0</int></value></member><member><name>votesperuser</name><value><int>0</int></value></member><member><name>name</name><value><string>Spider
-      Séçretíøns</string></value></member><member><name>maxvotesperbug</name><value><int>10000</int></value></member><member><name>classification_id</name><value><int>1</int></value></member><member><name>description</name><value><string>Spider
+    body: <?xml version="1.0" encoding="UTF-8"?><methodResponse><params><param><value><struct><member><name>products</name><value><array><data><value><struct><member><name>internals</name><value><struct><member><name>defaultmilestone</name><value><string>---</string></value></member><member><name>votesperuser</name><value><int>0</int></value></member><member><name>allows_unconfirmed</name><value><int>0</int></value></member><member><name>name</name><value><string>Spider
+      Séçretíøns</string></value></member><member><name>classification_id</name><value><int>1</int></value></member><member><name>maxvotesperbug</name><value><int>10000</int></value></member><member><name>description</name><value><string>Spider
       secretions</string></value></member><member><name>votestoconfirm</name><value><int>0</int></value></member><member><name>isactive</name><value><int>1</int></value></member><member><name>id</name><value><int>4</int></value></member></struct></value></member><member><name>name</name><value><string>Spider
       Séçretíøns</string></value></member><member><name>id</name><value><int>4</int></value></member><member><name>description</name><value><string>Spider
       secretions</string></value></member></struct></value></data></array></value></member></struct></value></param></params></methodResponse>
@@ -125,23 +131,25 @@
       connection:
       - keep-alive
       cookie:
-      - Bugzilla_login=40167; Bugzilla_logincookie=CJhhx44CpV
+      - Bugzilla_login=40167; Bugzilla_logincookie=qXAqeQSFi1
   response: !ruby/struct:VCR::Response
     status: !ruby/struct:VCR::ResponseStatus
       code: 200
       message: OK
     headers:
       date:
-      - Mon, 14 May 2012 21:37:29 GMT
+      - Tue, 16 Apr 2013 14:51:45 GMT
       server:
       - Apache/2.2.3 (CentOS)
       soapserver:
       - SOAP::Lite/Perl/0.712
       content-length:
       - '1257'
+      keep-alive:
+      - timeout=15, max=100
       content-type:
       - text/xml
-    body: <?xml version="1.0" encoding="UTF-8"?><methodResponse><params><param><value><struct><member><name>products</name><value><array><data><value><struct><member><name>internals</name><value><struct><member><name>defaultmilestone</name><value><string>---</string></value></member><member><name>allows_unconfirmed</name><value><int>0</int></value></member><member><name>votesperuser</name><value><int>0</int></value></member><member><name>name</name><value><string>MyOwnBadSelf</string></value></member><member><name>maxvotesperbug</name><value><int>10000</int></value></member><member><name>classification_id</name><value><int>2</int></value></member><member><name>description</name><value><string>feh.</string></value></member><member><name>votestoconfirm</name><value><int>0</int></value></member><member><name>isactive</name><value><int>1</int></value></member><member><name>id</name><value><int>3</int></value></member></struct></value></member><member><name>name</name><value><string>MyOwnBadSelf</string></value></member><member><name>id</name><value><int>3</int></value></member><member><name>description</name><value><string>feh.</string></value></member></struct></value></data></array></value></member></struct></value></param></params></methodResponse>
+    body: <?xml version="1.0" encoding="UTF-8"?><methodResponse><params><param><value><struct><member><name>products</name><value><array><data><value><struct><member><name>internals</name><value><struct><member><name>defaultmilestone</name><value><string>---</string></value></member><member><name>votesperuser</name><value><int>0</int></value></member><member><name>allows_unconfirmed</name><value><int>0</int></value></member><member><name>name</name><value><string>MyOwnBadSelf</string></value></member><member><name>classification_id</name><value><int>2</int></value></member><member><name>maxvotesperbug</name><value><int>10000</int></value></member><member><name>description</name><value><string>feh.</string></value></member><member><name>votestoconfirm</name><value><int>0</int></value></member><member><name>isactive</name><value><int>1</int></value></member><member><name>id</name><value><int>3</int></value></member></struct></value></member><member><name>name</name><value><string>MyOwnBadSelf</string></value></member><member><name>id</name><value><int>3</int></value></member><member><name>description</name><value><string>feh.</string></value></member></struct></value></data></array></value></member></struct></value></param></params></methodResponse>
     http_version: '1.1'
 - !ruby/struct:VCR::HTTPInteraction
   request: !ruby/struct:VCR::Request
@@ -158,24 +166,26 @@
       connection:
       - keep-alive
       cookie:
-      - Bugzilla_login=40167; Bugzilla_logincookie=CJhhx44CpV
+      - Bugzilla_login=40167; Bugzilla_logincookie=qXAqeQSFi1
   response: !ruby/struct:VCR::Response
     status: !ruby/struct:VCR::ResponseStatus
       code: 200
       message: OK
     headers:
       date:
-      - Mon, 14 May 2012 21:37:30 GMT
+      - Tue, 16 Apr 2013 14:51:47 GMT
       server:
       - Apache/2.2.3 (CentOS)
       soapserver:
       - SOAP::Lite/Perl/0.712
       content-length:
       - '1289'
+      keep-alive:
+      - timeout=15, max=100
       content-type:
       - text/xml
-    body: <?xml version="1.0" encoding="UTF-8"?><methodResponse><params><param><value><struct><member><name>products</name><value><array><data><value><struct><member><name>internals</name><value><struct><member><name>defaultmilestone</name><value><string>---</string></value></member><member><name>allows_unconfirmed</name><value><int>0</int></value></member><member><name>votesperuser</name><value><int>0</int></value></member><member><name>name</name><value><string>Sam's
-      Widget</string></value></member><member><name>maxvotesperbug</name><value><int>10000</int></value></member><member><name>classification_id</name><value><int>3</int></value></member><member><name>description</name><value><string>Special
+    body: <?xml version="1.0" encoding="UTF-8"?><methodResponse><params><param><value><struct><member><name>products</name><value><array><data><value><struct><member><name>internals</name><value><struct><member><name>defaultmilestone</name><value><string>---</string></value></member><member><name>votesperuser</name><value><int>0</int></value></member><member><name>allows_unconfirmed</name><value><int>0</int></value></member><member><name>name</name><value><string>Sam's
+      Widget</string></value></member><member><name>classification_id</name><value><int>3</int></value></member><member><name>maxvotesperbug</name><value><int>10000</int></value></member><member><name>description</name><value><string>Special
       SAM widgets</string></value></member><member><name>votestoconfirm</name><value><int>0</int></value></member><member><name>isactive</name><value><int>1</int></value></member><member><name>id</name><value><int>19</int></value></member></struct></value></member><member><name>name</name><value><string>Sam's
       Widget</string></value></member><member><name>id</name><value><int>19</int></value></member><member><name>description</name><value><string>Special
       SAM widgets</string></value></member></struct></value></data></array></value></member></struct></value></param></params></methodResponse>
@@ -195,23 +205,25 @@
       connection:
       - keep-alive
       cookie:
-      - Bugzilla_login=40167; Bugzilla_logincookie=CJhhx44CpV
+      - Bugzilla_login=40167; Bugzilla_logincookie=qXAqeQSFi1
   response: !ruby/struct:VCR::Response
     status: !ruby/struct:VCR::ResponseStatus
       code: 200
       message: OK
     headers:
       date:
-      - Mon, 14 May 2012 21:37:31 GMT
+      - Tue, 16 Apr 2013 14:51:48 GMT
       server:
       - Apache/2.2.3 (CentOS)
       soapserver:
       - SOAP::Lite/Perl/0.712
       content-length:
       - '1451'
+      keep-alive:
+      - timeout=15, max=100
       content-type:
       - text/xml
-    body: <?xml version="1.0" encoding="UTF-8"?><methodResponse><params><param><value><struct><member><name>products</name><value><array><data><value><struct><member><name>internals</name><value><struct><member><name>defaultmilestone</name><value><string>---</string></value></member><member><name>allows_unconfirmed</name><value><int>1</int></value></member><member><name>votesperuser</name><value><int>5</int></value></member><member><name>name</name><value><string>FoodReplicator</string></value></member><member><name>maxvotesperbug</name><value><int>999</int></value></member><member><name>classification_id</name><value><int>1</int></value></member><member><name>description</name><value><string>Software
+    body: <?xml version="1.0" encoding="UTF-8"?><methodResponse><params><param><value><struct><member><name>products</name><value><array><data><value><struct><member><name>internals</name><value><struct><member><name>defaultmilestone</name><value><string>---</string></value></member><member><name>votesperuser</name><value><int>5</int></value></member><member><name>allows_unconfirmed</name><value><int>1</int></value></member><member><name>name</name><value><string>FoodReplicator</string></value></member><member><name>classification_id</name><value><int>1</int></value></member><member><name>maxvotesperbug</name><value><int>999</int></value></member><member><name>description</name><value><string>Software
       that controls a piece of hardware that will create any food item through a voice
       interface.</string></value></member><member><name>votestoconfirm</name><value><int>2</int></value></member><member><name>isactive</name><value><int>1</int></value></member><member><name>id</name><value><int>2</int></value></member></struct></value></member><member><name>name</name><value><string>FoodReplicator</string></value></member><member><name>id</name><value><int>2</int></value></member><member><name>description</name><value><string>Software
       that controls a piece of hardware that will create any food item through a voice
@@ -232,24 +244,26 @@
       connection:
       - keep-alive
       cookie:
-      - Bugzilla_login=40167; Bugzilla_logincookie=CJhhx44CpV
+      - Bugzilla_login=40167; Bugzilla_logincookie=qXAqeQSFi1
   response: !ruby/struct:VCR::Response
     status: !ruby/struct:VCR::ResponseStatus
       code: 200
       message: OK
     headers:
       date:
-      - Mon, 14 May 2012 21:37:32 GMT
+      - Tue, 16 Apr 2013 14:51:49 GMT
       server:
       - Apache/2.2.3 (CentOS)
       soapserver:
       - SOAP::Lite/Perl/0.712
       content-length:
       - '1307'
+      keep-alive:
+      - timeout=15, max=100
       content-type:
       - text/xml
-    body: <?xml version="1.0" encoding="UTF-8"?><methodResponse><params><param><value><struct><member><name>products</name><value><array><data><value><struct><member><name>internals</name><value><struct><member><name>defaultmilestone</name><value><string>---</string></value></member><member><name>allows_unconfirmed</name><value><int>0</int></value></member><member><name>votesperuser</name><value><int>0</int></value></member><member><name>name</name><value><string>LJL
-      Test Product</string></value></member><member><name>maxvotesperbug</name><value><int>10000</int></value></member><member><name>classification_id</name><value><int>1</int></value></member><member><name>description</name><value><string>Test
+    body: <?xml version="1.0" encoding="UTF-8"?><methodResponse><params><param><value><struct><member><name>products</name><value><array><data><value><struct><member><name>internals</name><value><struct><member><name>defaultmilestone</name><value><string>---</string></value></member><member><name>votesperuser</name><value><int>0</int></value></member><member><name>allows_unconfirmed</name><value><int>0</int></value></member><member><name>name</name><value><string>LJL
+      Test Product</string></value></member><member><name>classification_id</name><value><int>1</int></value></member><member><name>maxvotesperbug</name><value><int>10000</int></value></member><member><name>description</name><value><string>Test
       product description</string></value></member><member><name>votestoconfirm</name><value><int>0</int></value></member><member><name>isactive</name><value><int>1</int></value></member><member><name>id</name><value><int>20</int></value></member></struct></value></member><member><name>name</name><value><string>LJL
       Test Product</string></value></member><member><name>id</name><value><int>20</int></value></member><member><name>description</name><value><string>Test
       product description</string></value></member></struct></value></data></array></value></member></struct></value></param></params></methodResponse>

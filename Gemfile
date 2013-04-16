@@ -3,7 +3,7 @@ source "http://rubygems.org"
 # Example:
 #   gem "activesupport", ">= 2.3.5"
 
-gem "taskmapper", "~> 0.8"
+gem "taskmapper"
 gem "rubyzilla", "~> 0.1"
 # Add dependencies to develop your gem here.
 # Include everything needed to run rake, tests, features, etc.

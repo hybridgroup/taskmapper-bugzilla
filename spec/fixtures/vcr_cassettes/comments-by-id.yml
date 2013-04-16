@@ -14,20 +14,22 @@
       connection:
       - keep-alive
       cookie:
-      - Bugzilla_login=40167; Bugzilla_logincookie=RUp9Emcl6n
+      - Bugzilla_login=40167; Bugzilla_logincookie=shbKQ6CBI3
   response: !ruby/struct:VCR::Response
     status: !ruby/struct:VCR::ResponseStatus
       code: 200
       message: OK
     headers:
       date:
-      - Mon, 14 May 2012 21:37:20 GMT
+      - Tue, 16 Apr 2013 14:51:37 GMT
       server:
       - Apache/2.2.3 (CentOS)
       soapserver:
       - SOAP::Lite/Perl/0.712
       content-length:
       - '4764'
+      keep-alive:
+      - timeout=15, max=100
       content-type:
       - text/xml
     body: <?xml version="1.0" encoding="UTF-8"?><methodResponse><params><param><value><struct><member><name>faults</name><value><array><data
@@ -37,8 +39,8 @@
       case for iTest</string></value></member><member><name>everconfirmed</name><value><int>1</int></value></member><member><name>bug_severity</name><value><string>critical</string></value></member><member><name>reporter_id</name><value><int>32952</int></value></member><member><name>estimated_time</name><value><double>0.00</double></value></member><member><name>remaining_time</name><value><double>0.00</double></value></member><member><name>cf_large_text</name><value><string
       /></value></member><member><name>cf_free_text</name><value><string /></value></member><member><name>resolution</name><value><string
       /></value></member><member><name>reporter_accessible</name><value><int>1</int></value></member><member><name>op_sys</name><value><string>Windows
-      XP</string></value></member><member><name>status</name><value><struct><member><name>sortkey</name><value><int>200</int></value></member><member><name>value</name><value><string>NEW</string></value></member><member><name>is_open</name><value><int>1</int></value></member><member><name>isactive</name><value><int>1</int></value></member><member><name>id</name><value><int>2</int></value></member></struct></value></member><member><name>_multi_selects</name><value><array><data><value><struct><member><name>mailhead</name><value><int>1</int></value></member><member><name>sortkey</name><value><int>551</int></value></member><member><name>custom</name><value><int>1</int></value></member><member><name>name</name><value><string>cf_mulitple_select</string></value></member><member><name>description</name><value><string>A
-      multiple-select box</string></value></member><member><name>buglist</name><value><int>0</int></value></member><member><name>obsolete</name><value><int>0</int></value></member><member><name>enter_bug</name><value><int>1</int></value></member><member><name>id</name><value><int>61</int></value></member><member><name>type</name><value><int>3</int></value></member></struct></value></data></array></value></member><member><name>bug_file_loc</name><value><string
+      XP</string></value></member><member><name>status</name><value><struct><member><name>sortkey</name><value><int>200</int></value></member><member><name>value</name><value><string>NEW</string></value></member><member><name>is_open</name><value><int>1</int></value></member><member><name>isactive</name><value><int>1</int></value></member><member><name>id</name><value><int>2</int></value></member></struct></value></member><member><name>_multi_selects</name><value><array><data><value><struct><member><name>mailhead</name><value><int>1</int></value></member><member><name>sortkey</name><value><int>551</int></value></member><member><name>name</name><value><string>cf_mulitple_select</string></value></member><member><name>custom</name><value><int>1</int></value></member><member><name>description</name><value><string>A
+      multiple-select box</string></value></member><member><name>obsolete</name><value><int>0</int></value></member><member><name>buglist</name><value><int>0</int></value></member><member><name>enter_bug</name><value><int>1</int></value></member><member><name>id</name><value><int>61</int></value></member><member><name>type</name><value><int>3</int></value></member></struct></value></data></array></value></member><member><name>bug_file_loc</name><value><string
       /></value></member><member><name>product_id</name><value><int>1</int></value></member><member><name>rep_platform</name><value><string>PC</string></value></member><member><name>creation_ts</name><value><string>2008.09.29
       13:33</string></value></member><member><name>status_whiteboard</name><value><string
       /></value></member><member><name>bug_status</name><value><string>NEW</string></value></member><member><name>delta_ts</name><value><string>2010-02-01
@@ -61,23 +63,25 @@
       connection:
       - keep-alive
       cookie:
-      - Bugzilla_login=40167; Bugzilla_logincookie=RUp9Emcl6n
+      - Bugzilla_login=40167; Bugzilla_logincookie=shbKQ6CBI3
   response: !ruby/struct:VCR::Response
     status: !ruby/struct:VCR::ResponseStatus
       code: 200
       message: OK
     headers:
       date:
-      - Mon, 14 May 2012 21:37:21 GMT
+      - Tue, 16 Apr 2013 14:51:39 GMT
       server:
       - Apache/2.2.3 (CentOS)
       soapserver:
       - SOAP::Lite/Perl/0.712
       content-length:
       - '1644'
+      keep-alive:
+      - timeout=15, max=100
       content-type:
       - text/xml
-    body: ! '<?xml version="1.0" encoding="UTF-8"?><methodResponse><params><param><value><struct><member><name>products</name><value><array><data><value><struct><member><name>internals</name><value><struct><member><name>defaultmilestone</name><value><string>---</string></value></member><member><name>allows_unconfirmed</name><value><int>0</int></value></member><member><name>votesperuser</name><value><int>1000</int></value></member><member><name>name</name><value><string>WorldControl</string></value></member><member><name>maxvotesperbug</name><value><int>1</int></value></member><member><name>classification_id</name><value><int>2</int></value></member><member><name>description</name><value><string>A
+    body: ! '<?xml version="1.0" encoding="UTF-8"?><methodResponse><params><param><value><struct><member><name>products</name><value><array><data><value><struct><member><name>internals</name><value><struct><member><name>defaultmilestone</name><value><string>---</string></value></member><member><name>votesperuser</name><value><int>1000</int></value></member><member><name>allows_unconfirmed</name><value><int>0</int></value></member><member><name>name</name><value><string>WorldControl</string></value></member><member><name>classification_id</name><value><int>2</int></value></member><member><name>maxvotesperbug</name><value><int>1</int></value></member><member><name>description</name><value><string>A
       small little program for controlling the world. Can be used&#xd;
 
       for good or for evil. Sub-components can be created using the WorldControl API
@@ -102,20 +106,22 @@
       connection:
       - keep-alive
       cookie:
-      - Bugzilla_login=40167; Bugzilla_logincookie=RUp9Emcl6n
+      - Bugzilla_login=40167; Bugzilla_logincookie=shbKQ6CBI3
   response: !ruby/struct:VCR::Response
     status: !ruby/struct:VCR::ResponseStatus
       code: 200
       message: OK
     headers:
       date:
-      - Mon, 14 May 2012 21:37:23 GMT
+      - Tue, 16 Apr 2013 14:51:40 GMT
       server:
       - Apache/2.2.3 (CentOS)
       soapserver:
       - SOAP::Lite/Perl/0.712
       content-length:
       - '858'
+      keep-alive:
+      - timeout=15, max=100
       content-type:
       - text/xml
     body: <?xml version="1.0" encoding="UTF-8"?><methodResponse><params><param><value><struct><member><name>bugs</name><value><struct

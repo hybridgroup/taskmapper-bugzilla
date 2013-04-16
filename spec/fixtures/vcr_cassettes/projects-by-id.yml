@@ -14,14 +14,14 @@
       connection:
       - keep-alive
       cookie:
-      - Bugzilla_login=40167; Bugzilla_logincookie=qZTuGiaaME
+      - Bugzilla_login=40167; Bugzilla_logincookie=jpFu6jBoXE
   response: !ruby/struct:VCR::Response
     status: !ruby/struct:VCR::ResponseStatus
       code: 200
       message: OK
     headers:
       date:
-      - Tue, 16 Apr 2013 14:51:56 GMT
+      - Tue, 16 Apr 2013 14:55:52 GMT
       server:
       - Apache/2.2.3 (CentOS)
       soapserver:

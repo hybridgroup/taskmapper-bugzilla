@@ -19,7 +19,7 @@
       message: OK
     headers:
       date:
-      - Tue, 16 Apr 2013 14:51:32 GMT
+      - Tue, 16 Apr 2013 14:55:29 GMT
       server:
       - Apache/2.2.3 (CentOS)
       soapserver:
@@ -27,7 +27,7 @@
       set-cookie:
       - Bugzilla_login=40167; path=/bugzilla-3.6-branch/; expires=Fri, 01-Jan-2038
         00:00:00 GMT; secure; HttpOnly
-      - Bugzilla_logincookie=shbKQ6CBI3; path=/bugzilla-3.6-branch/; expires=Fri,
+      - Bugzilla_logincookie=ptTIy8SCxC; path=/bugzilla-3.6-branch/; expires=Fri,
         01-Jan-2038 00:00:00 GMT; secure; HttpOnly
       content-length:
       - '198'
